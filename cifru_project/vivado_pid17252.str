@@ -857,3 +857,160 @@ selectCodeEditor("cifru.vhd", 116, 409, false, false, false, false, true); // ad
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 03h:12m:51s
 // Elapsed Time for: 'L.f': 03h:12m:53s
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 32 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+String[] filenames31467 = {"D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifreCurente.vhd", "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd", "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (dialog15)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifreCurente.vhd D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd} 
+// Elapsed Time for: 'L.f': 03h:14m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:14m:03s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 03h:14m:05s
+// Elapsed Time for: 'L.f': 03h:14m:07s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 03h:14m:09s
+// Elapsed Time for: 'L.f': 03h:14m:11s
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (dialog17)
+// Tcl Message: add_files -norecurse D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UnitateControl(Behavioral) (UnitateControl.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UnitateControl(Behavioral) (UnitateControl.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd"'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (dialog19)
+// Tcl Message: add_files -norecurse D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd 
+selectButton((HResource) null, "Sources_settings"); // v (Sources_settings): TRUE
+// Elapsed time: 23 seconds
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // v (RDIResource.AbstractSearchablePanel_SHOW_SEARCH, Sources_search): TRUE
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd), U1 : RamCifru(Behavioral) (RamCifru.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd), U1 : RamCifru(Behavioral) (RamCifru.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd), U1 : RamCifru(Behavioral) (RamCifru.vhd)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd"'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd"'
+// HMemoryUtils.trashcanNow. Engine heap size: 2,533 MB. GUI used memory: 72 MB. Current time: 4/13/24, 6:58:26 PM EEST
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd"'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd), U1 : RamCifru(Behavioral) (RamCifru.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd), U1 : RamCifru(Behavioral) (RamCifru.vhd)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd"'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, comparator(Behavioral) (comparator.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'notepad.exe "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd"'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:18m:25s
+// Elapsed Time for: 'L.f': 03h:18m:27s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:18m:59s
+// Elapsed Time for: 'L.f': 03h:19m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:29m:36s
+// Elapsed Time for: 'L.f': 03h:29m:38s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:30m:00s
+// Elapsed Time for: 'L.f': 03h:30m:02s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:30m:24s
+// Elapsed Time for: 'L.f': 03h:30m:26s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,533 MB. GUI used memory: 71 MB. Current time: 4/13/24, 7:28:27 PM EEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:49m:40s
+// Elapsed Time for: 'L.f': 03h:49m:42s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:49m:58s
+// Elapsed Time for: 'L.f': 03h:50m:00s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:50m:16s
+// Elapsed Time for: 'L.f': 03h:50m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:50m:26s
+// Elapsed Time for: 'L.f': 03h:50m:28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:53m:32s
+// Elapsed Time for: 'L.f': 03h:53m:34s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:53m:36s
+// Elapsed Time for: 'L.f': 03h:53m:38s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:53m:52s
+// Elapsed Time for: 'L.f': 03h:53m:54s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:54m:28s
+// Elapsed Time for: 'L.f': 03h:54m:30s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:58m:55s
+// Elapsed Time for: 'L.f': 03h:58m:57s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04h:02m:01s
+// Elapsed Time for: 'L.f': 04h:02m:03s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04h:03m:21s
+// Elapsed Time for: 'L.f': 04h:03m:23s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04h:07m:21s
+// Elapsed Time for: 'L.f': 04h:07m:23s

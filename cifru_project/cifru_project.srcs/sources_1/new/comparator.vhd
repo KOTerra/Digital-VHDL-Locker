@@ -5,7 +5,7 @@ entity comparator is
 Port (
 a1,a2,a3: in std_logic_vector (3 downto 0);  
 b1,b2,b3: in std_logic_vector (3 downto 0);  
-MATCH : out std_logic      
+match : out std_logic      
  );
 end comparator;
 
