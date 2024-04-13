@@ -840,3 +840,20 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
 dismissDialog("Invalid Top Module"); // s (dialog13)
 // Elapsed Time for: 'L.f': 03h:10m:15s
 // Elapsed Time for: 'L.f': 03h:10m:17s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:10m:57s
+// Elapsed Time for: 'L.f': 03h:10m:59s
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UnitateControl(Behavioral) (UnitateControl.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cifru(Behavioral) (cifru.vhd)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 49 seconds
+selectCodeEditor("cifru.vhd", 635, 327); // ad (cifru.vhd)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // g (PAResourceAtoD.AbstractFileView_RELOAD)
+selectCodeEditor("cifru.vhd", 108, 436); // ad (cifru.vhd)
+selectCodeEditor("cifru.vhd", 116, 409); // ad (cifru.vhd)
+selectCodeEditor("cifru.vhd", 116, 409, false, false, false, false, true); // ad (cifru.vhd) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03h:12m:51s
+// Elapsed Time for: 'L.f': 03h:12m:53s
