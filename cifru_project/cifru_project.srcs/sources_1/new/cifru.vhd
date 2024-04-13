@@ -32,7 +32,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity cifru is
---  Port ( );
+    Port ( CLK : in STD_LOGIC;
+           Reset : in STD_LOGIC;
+	   Up,Down,Ok : in STD_LOGIC);
+	   
 end cifru;
 
 architecture Behavioral of cifru is
