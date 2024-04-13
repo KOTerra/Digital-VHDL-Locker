@@ -100,3 +100,263 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/xilinx/Vivado/2023.2/data/ip'.
 open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1422.852 ; gain = 256.285
 update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/constraints.xdc
+export_ip_user_files -of_objects  [get_files D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/constraints.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/constraints.xdc
+file mkdir D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1
+file mkdir D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new
+close [ open D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc
+close [ open D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd w ]
+add_files D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top UnitateControl [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: UnitateControl
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9428
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2310.594 ; gain = 393.578
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-8892] 'liber' is already declared in this region [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:21]
+ERROR: [Synth 8-10097] type error near liber ; current type std_logic; expected type state [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:29]
+INFO: [Synth 8-11252] unit 'behavioral' is ignored due to previous errors [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:35]
+INFO: [Synth 8-10443] VHDL file 'D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd' is ignored due to errors
+INFO: [Synth 8-638] synthesizing module 'UnitateControl' [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:6]
+INFO: [Synth 8-256] done synthesizing module 'UnitateControl' (0#1) [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2417.695 ; gain = 500.680
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+8 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+set_property top cifru [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top UnitateControl [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: UnitateControl
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2417.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UnitateControl' [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'UnitateControl' (0#1) [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:20]
+WARNING: [Synth 8-3848] Net anodActiv in module/entity UnitateControl does not have driver. [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:16]
+WARNING: [Synth 8-3848] Net segmentLED in module/entity UnitateControl does not have driver. [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:17]
+WARNING: [Synth 8-3330] design UnitateControl has an empty top module
+WARNING: [Synth 8-7129] Port anodActiv[7] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[6] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[5] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[4] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[6] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[5] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[4] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port liber_ocupat in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addCifra in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port match in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[0] in module UnitateControl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2436.727 ; gain = 18.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2436.727 ; gain = 18.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2436.727 ; gain = 18.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.727 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2450.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2491.723 ; gain = 73.941
+5 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2491.723 ; gain = 73.941
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2546.562 ; gain = 51.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UnitateControl' [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'UnitateControl' (0#1) [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:20]
+WARNING: [Synth 8-3848] Net anodActiv in module/entity UnitateControl does not have driver. [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:16]
+WARNING: [Synth 8-3848] Net segmentLED in module/entity UnitateControl does not have driver. [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd:17]
+WARNING: [Synth 8-3330] design UnitateControl has an empty top module
+WARNING: [Synth 8-7129] Port anodActiv[7] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[6] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[5] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[4] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodActiv[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[6] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[5] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[4] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segmentLED[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port liber_ocupat in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addCifra in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port match in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue1[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue2[0] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[3] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[2] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[1] in module UnitateControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port displayValue3[0] in module UnitateControl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2627.723 ; gain = 132.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2646.617 ; gain = 151.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2646.617 ; gain = 151.348
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2665.477 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2665.477 ; gain = 170.207
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\cifru.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FACULTATE\facultate\anul1\sem2\PSN\proiect\ProiectPSN-Cifru\cifru_project\cifru_project.srcs\sources_1\new\UnitateControl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+set_property top cifru [current_fileset]
