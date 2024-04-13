@@ -50,3 +50,7 @@ refresh_design
 close_design
 update_compile_order -fileset sources_1
 set_property top cifru [current_fileset]
+add_files -norecurse {D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifreCurente.vhd D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/comparator.vhd D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd
+add_files -norecurse D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamCifru.vhd

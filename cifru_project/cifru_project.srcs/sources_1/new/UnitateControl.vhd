@@ -10,8 +10,8 @@ entity UnitateControl is
         addCifra : in std_logic;
         checkedMatch : in std_logic;
         match : in std_logic;
-        liberOcupat : out std_logic;
-        introduCaractere : out std_logic;
+        liberOcupat : inout std_logic;
+        introduCaractere : inout std_logic;
         displayValue1 : in std_logic_vector (3 downto 0);
         displayValue2 : in std_logic_vector (3 downto 0);
         displayValue3 : in std_logic_vector (3 downto 0);
