@@ -112,6 +112,7 @@ begin
                 if addCifra = '1' then
                     nextState <= ASTEPT_MATCH;
                 end if;
+                ---sau un wait 
 
             when ASTEPT_MATCH =>
                 if checkedMatch = '0' then
