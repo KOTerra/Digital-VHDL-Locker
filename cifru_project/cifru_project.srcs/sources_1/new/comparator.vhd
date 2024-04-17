@@ -1,58 +1,42 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+use IEEE.math_real.all;
+use IEEE.std_logic_unsigned.all;
+
 entity comparator is
-Port (
-a1,a2,a3: in std_logic_vector (3 downto 0);  
-b1,b2,b3: in std_logic_vector (3 downto 0);  
-match : out std_logic      
- );
+  port (
+    enable : in std_logic;
+    a1, a2, a3 : in std_logic_vector (3 downto 0);
+    b1, b2, b3 : in std_logic_vector (3 downto 0);
+    checkedMatch : out std_logic;
+    match : out std_logic
+  );
 end comparator;
 
 architecture Behavioral of comparator is
-component RamCifru is
-    port (
-      a_ram : in BIT_VECTOR (1 downto 0);
-      cs_ram : in STD_LOGIC;
-      we : in STD_LOGIC;
-      d_ram : inout BIT_VECTOR (3 downto 0)
-    );
-  end component;
-
-  component RamCifreCurente is
-    port (
-      a_ram : in BIT_VECTOR (1 downto 0);
-      cs_ram : in STD_LOGIC;
-      we : in STD_LOGIC;
-      d_ram : inout BIT_VECTOR (3 downto 0)
-    );
-  end component;
-  -- Signals for connecting components
-  signal ram1_data : std_logic_vector(3 downto 0);  -- Data from RAM 1
-  signal ram2_data : std_logic_vector(3 downto 0);  -- Data from RAM 2
-  signal match_out : std_logic;                     -- Output indicating match
+  signal s1, s2, s3 : std_logic;
 begin
- -- Instantiate the RAM modules
-  U1: RamCifru port map (
-    a_ram =>'0',
-    cs_ram => '1',
-    we => '1',
-    d_ram => ram1_data
-  );
-
-  U2: RamCifreCurente port map (
-    a_ram =>'0',
-    cs_ram => '1',
-    we => '1',
-    d_ram => ram2_data
-  );
-
-process(clk)
+  process (enable, a1, a2, a3, b1, b2, b3)
   begin
-    -- No need to check for rising edge (clock is always running)
-    match_out <= ram1_data = ram2_data;
+    s1 <= '1';
+    s2 <= '1';
+    s3 <= '1';
+    checkedMatch <= '0';
+    if enable = '1' then
+      if a1 = b1 then
+        s1 <= '1';
+      end if;
+      if a2 = b2 then
+        s2 <= '1';
+      end if;
+      if a3 = b3 then
+        s3 <= '1';
+      end if;
+
+      match <= s1 and s2 and s3;
+      checkedMatch <= '1';
+    end if;
   end process;
-  
---MATCH <= (to_integer(unsigned(a1)) = to_integer(unsigned(b1))) and (to_integer(unsigned(a2)) = to_integer(unsigned(b2))) and (to_integer(unsigned(a3)) = to_integer(unsigned(b3)));
 
 end Behavioral;

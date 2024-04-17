@@ -8,22 +8,18 @@ entity UnitateControl is
         clk : in std_logic;
         reset : in std_logic;
         addCifra : in std_logic;
+        enableCompare : out std_logic;
         checkedMatch : in std_logic;
         match : in std_logic;
         liberOcupat : inout std_logic;
-        introduCaractere : inout std_logic;
-        displayValue1 : in std_logic_vector (3 downto 0);
-        displayValue2 : in std_logic_vector (3 downto 0);
-        displayValue3 : in std_logic_vector (3 downto 0);
-        anodActiv : out std_logic_vector (7 downto 0);
-        segmentLED : out std_logic_vector (6 downto 0));
+        introduCaractere : inout std_logic);
 end UnitateControl;
 
 architecture Behavioral of UnitateControl is
     type state is (LIBER, ASTEPT_CIFRA0, ASTEPT_CIFRA1, ASTEPT_CIFRA2, OCUPAT, ASTEPT_CIFRA3, ASTEPT_CIFRA4, ASTEPT_CIFRA5, ASTEPT_MATCH);
 
     signal currentState, nextState : state;
-    signal enableCatod1, enableCatod2, enableCatod3 : std_logic;
+    signal enableAnod1, enableAnod2, enableAnod3 : std_logic;
 begin
 
     act : process (reset, clk)
@@ -35,18 +31,14 @@ begin
         end if;
     end process;
 
-    changeState : process (currentState, addCifra, match, checkedMatch, liberOcupat, introduCaractere, displayValue1, displayValue2, displayValue3)
+    changeState : process (currentState, match, checkedMatch, liberOcupat, introduCaractere)
     begin
-        addCifra <= '0';
-        --match <= '0';
         liberOcupat <= '0';
         introduCaractere <= '0';
-        displayValue1 <= '0';
-        displayValue2 <= '0';
-        displayValue3 <= '0';
-        enableCatod1 <= '0';
-        enableCatod2 <= '0';
-        enableCatod3 <= '0';
+        enableCompare <= '0';
+        enableAnod1 <= '0';
+        enableAnod2 <= '0';
+        enableAnod3 <= '0';
         ----componenet anod
 
         case currentState is
@@ -57,24 +49,24 @@ begin
 
             when ASTEPT_CIFRA0 =>
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
+                enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
             when ASTEPT_CIFRA1 =>
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
-                enableCatod2 <= '1';
+                enableAnod1 <= '1';
+                enableAnod2 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA2;
                 end if;
 
             when ASTEPT_CIFRA2 =>
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
-                enableCatod2 <= '1';
-                enableCatod3 <= '1';
+                enableAnod1 <= '1';
+                enableAnod2 <= '1';
+                enableAnod3 <= '1';
                 if addCifra = '1' then
                     nextState <= OCUPAT;
                 end if;
@@ -90,7 +82,7 @@ begin
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
+                enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA4;
                 end if;
@@ -98,8 +90,8 @@ begin
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
-                enableCatod2 <= '1';
+                enableAnod1 <= '1';
+                enableAnod2 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA5;
                 end if;
@@ -107,14 +99,15 @@ begin
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
                 introduCaractere <= '1';
-                enableCatod1 <= '1';
-                enableCatod2 <= '1';
+                enableAnod1 <= '1';
+                enableAnod2 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_MATCH;
                 end if;
                 ---sau un wait 
 
             when ASTEPT_MATCH =>
+                enableCompare <= '1';
                 if checkedMatch = '0' then
                     nextState <= ASTEPT_MATCH;
                 else
