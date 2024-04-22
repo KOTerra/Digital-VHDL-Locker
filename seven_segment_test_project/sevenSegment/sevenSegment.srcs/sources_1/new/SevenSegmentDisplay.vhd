@@ -35,7 +35,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity SevenSegmentDisplay is
     port (
-        clk : std_logic;
+        clk :in std_logic;
         enableAnod0 : in std_logic;
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;

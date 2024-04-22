@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/impl_1/SevenSegmentDisplay.tcl"
+  variable script "D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/impl_1/SevenSegmentDisplay.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,23 +122,23 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
-  set_param runs.launchOptions { -jobs 8  }
+  set_param chipscope.maxJobs 3
+  set_param runs.launchOptions { -jobs 12  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.cache/wt [current_project]
-  set_property parent.project_path D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.xpr [current_project]
-  set_property ip_output_repo D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.cache/wt [current_project]
+  set_property parent.project_path D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.xpr [current_project]
+  set_property ip_output_repo D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1/SevenSegmentDisplay.dcp
+  add_files -quiet D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1/SevenSegmentDisplay.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.srcs/constrs_1/new/constraints.xdc
+  read_xdc D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.srcs/constrs_1/new/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
