@@ -35,7 +35,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity SevenSegmentDisplay is
     port (
-        clk :in std_logic;
+        clk : in std_logic;
         enableAnod0 : in std_logic;
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
@@ -51,39 +51,33 @@ architecture Behavioral of SevenSegmentDisplay is
     signal count : std_logic_vector(1 downto 0) := "00"; --index anod curent
     signal displayValueAtCount : std_logic_vector(3 downto 0) := "0000"; --val curenta pe anod curent
 begin
-      process (enableAnod0, enableAnod1, enableAnod2)
+    process (enableAnod0, enableAnod1, enableAnod2)
     begin
-        if enableAnod2 = '1' then
+        --count <= "00";
+        if enableAnod2 = '1' and enableAnod1 = '1' and enableAnod0 = '1' then
             countMaxValue <= "11";
-        elsif enableAnod1 = '1' then
+        elsif enableAnod1 = '1' and enableAnod0 = '1' then
             countMaxValue <= "10";
         elsif enableAnod0 = '1' then
             countMaxValue <= "01";
-
-        elsif enableAnod2 = '0' then
-            countMaxValue <= "10";
-        elsif enableAnod1 = '0' then
-            countMaxValue <= "01";
-        elsif enableAnod0 = '0' then
-            countMaxValue <= "00";
         else
-        countMaxValue <= "00";
+            countMaxValue <= "00";
         end if;
     end process;
 
-    process (clk)
+    process (clk, countMaxValue)
     begin
         if rising_edge(clk) then
+            count <= count + 1;
+
             if count = countMaxValue then
                 count <= "00";
-            else
-                count <= std_logic_vector(unsigned(count + 1));
             end if;
         end if;
     end process;
-    process (count,displayValue0, displayValue1, displayValue2)
+
+    process (count, displayValue0, displayValue1, displayValue2)
     begin
-        --wait??
         case count is
             when "00" =>
                 anodActiv <= "11111111";
@@ -91,10 +85,10 @@ begin
                 anodActiv <= "11111110";
                 displayValueAtCount <= displayValue0;
             when "10" =>
-                anodActiv <= "11111100";
+                anodActiv <= "11111101";
                 displayValueAtCount <= displayValue1;
             when "11" =>
-                anodActiv <= "11111000";
+                anodActiv <= "11111011";
                 displayValueAtCount <= displayValue2;
             when others =>
                 anodActiv <= "11111111";
@@ -117,8 +111,9 @@ begin
             when "1101" => segmentOutLED <= "1000010"; -- d
             when "1110" => segmentOutLED <= "0110000"; -- E
             when "1111" => segmentOutLED <= "0111000"; -- F
-            end case;
-        
+            when others => segmentOutLED <= "0000000";
+        end case;
+
     end process;
 
 end Behavioral;
