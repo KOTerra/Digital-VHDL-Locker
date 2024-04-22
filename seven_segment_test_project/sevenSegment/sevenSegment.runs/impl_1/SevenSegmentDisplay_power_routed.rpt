@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Apr 22 11:32:47 2024
-| Host             : POWERSLAVE running 64-bit major release  (build 9200)
+| Date             : Mon Apr 22 19:30:30 2024
+| Host             : anon running 64-bit major release  (build 9200)
 | Command          : report_power -file SevenSegmentDisplay_power_routed.rpt -pb SevenSegmentDisplay_power_summary_routed.pb -rpx SevenSegmentDisplay_power_routed.rpx
 | Design           : SevenSegmentDisplay
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.106        |
+| Total On-Chip Power (W)  | 0.114        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.009        |
+| Dynamic (W)              | 0.017        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       38 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       13 |     63400 |            0.02 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Register     |    <0.001 |        8 |    126800 |           <0.01 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |       38 |       --- |             --- |
-| I/O            |     0.009 |       31 |       210 |           14.76 |
+| Slice Logic    |    <0.001 |       27 |       --- |             --- |
+|   LUT as Logic |    <0.001 |        9 |     63400 |            0.01 |
+|   Register     |    <0.001 |        6 |    126800 |           <0.01 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    <0.001 |       35 |       --- |             --- |
+| I/O            |     0.016 |       31 |       210 |           14.76 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.106 |          |           |                 |
+| Total          |     0.114 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,8 +71,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,7 +139,7 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| SevenSegmentDisplay |     0.009 |
+| SevenSegmentDisplay |     0.017 |
 +---------------------+-----------+
 
 

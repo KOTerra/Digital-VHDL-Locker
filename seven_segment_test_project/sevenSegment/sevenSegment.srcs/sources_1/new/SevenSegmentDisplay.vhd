@@ -51,16 +51,28 @@ architecture Behavioral of SevenSegmentDisplay is
     signal count : std_logic_vector(1 downto 0) := "00"; --index anod curent
     signal displayValueAtCount : std_logic_vector(3 downto 0) := "0000"; --val curenta pe anod curent
 begin
-    process (clk, enableAnod0, enableAnod1, enableAnod2, displayValue0, displayValue1, displayValue2)
+      process (enableAnod0, enableAnod1, enableAnod2)
     begin
         if enableAnod2 = '1' then
-            countMaxValue <= "10";
+            countMaxValue <= "11";
         elsif enableAnod1 = '1' then
-            countMaxValue <= "01";
+            countMaxValue <= "10";
         elsif enableAnod0 = '1' then
-            countMaxValue <= "00";
-        end if;
+            countMaxValue <= "01";
 
+        elsif enableAnod2 = '0' then
+            countMaxValue <= "10";
+        elsif enableAnod1 = '0' then
+            countMaxValue <= "01";
+        elsif enableAnod0 = '0' then
+            countMaxValue <= "00";
+        else
+        countMaxValue <= "00";
+        end if;
+    end process;
+
+    process (clk)
+    begin
         if rising_edge(clk) then
             if count = countMaxValue then
                 count <= "00";
@@ -68,20 +80,24 @@ begin
                 count <= std_logic_vector(unsigned(count + 1));
             end if;
         end if;
-
+    end process;
+    process (count,displayValue0, displayValue1, displayValue2)
+    begin
         --wait??
         case count is
             when "00" =>
-                anodActiv <= "00000000";
-                displayValueAtCount <= displayValue0;
+                anodActiv <= "11111111";
             when "01" =>
-                anodActiv <= "00000001";
-                displayValueAtCount <= displayValue1;
+                anodActiv <= "11111110";
+                displayValueAtCount <= displayValue0;
             when "10" =>
-                anodActiv <= "00000010";
+                anodActiv <= "11111100";
+                displayValueAtCount <= displayValue1;
+            when "11" =>
+                anodActiv <= "11111000";
                 displayValueAtCount <= displayValue2;
             when others =>
-                anodActiv <= (others => '0');
+                anodActiv <= "11111111";
         end case;
 
         case displayValueAtCount is

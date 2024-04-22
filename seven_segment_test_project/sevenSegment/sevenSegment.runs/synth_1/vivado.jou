@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr 22 11:30:48 2024
-# Process ID: 7788
-# Current directory: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1
+# Start of session at: Mon Apr 22 19:29:10 2024
+# Process ID: 10784
+# Current directory: D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1
 # Command line: vivado.exe -log SevenSegmentDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SevenSegmentDisplay.tcl
-# Log file: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1/SevenSegmentDisplay.vds
-# Journal file: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1\vivado.jou
-# Running On: POWERSLAVE, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34305 MB
+# Log file: D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1/SevenSegmentDisplay.vds
+# Journal file: D:/ProiectPSN-Cifru/seven_segment_test_project/sevenSegment/sevenSegment.runs/synth_1\vivado.jou
+# Running On: anon, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 24956 MB
 #-----------------------------------------------------------
 source SevenSegmentDisplay.tcl -notrace
