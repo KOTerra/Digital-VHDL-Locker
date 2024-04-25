@@ -10,16 +10,19 @@ entity UnitateControl is
         addCifra : in std_logic;
         enableCompare : out std_logic;
         checkedMatch : in std_logic;
+        enableAnod1 : out std_logic;
+        enableAnod2 : out std_logic;
+        enableAnod3 : out std_logic;
         match : in std_logic;
-        liberOcupat : inout std_logic;
-        introduCaractere : inout std_logic);
+        liberOcupat : out std_logic;
+        liberOcupatLED : out std_logic;
+        introduCaractereLED : out std_logic);
 end UnitateControl;
 
 architecture Behavioral of UnitateControl is
     type state is (LIBER, ASTEPT_CIFRA0, ASTEPT_CIFRA1, ASTEPT_CIFRA2, OCUPAT, ASTEPT_CIFRA3, ASTEPT_CIFRA4, ASTEPT_CIFRA5, ASTEPT_MATCH);
 
     signal currentState, nextState : state;
-    signal enableAnod1, enableAnod2, enableAnod3 : std_logic;
 begin
 
     act : process (reset, clk)
@@ -31,10 +34,10 @@ begin
         end if;
     end process;
 
-    changeState : process (currentState, match, checkedMatch, liberOcupat, introduCaractere)
+    changeState : process (currentState, match, checkedMatch)
     begin
         liberOcupat <= '0';
-        introduCaractere <= '0';
+        introduCaractereLED <= '0';
         enableCompare <= '0';
         enableAnod1 <= '0';
         enableAnod2 <= '0';
@@ -48,14 +51,14 @@ begin
                 end if;
 
             when ASTEPT_CIFRA0 =>
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
             when ASTEPT_CIFRA1 =>
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -63,7 +66,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA2 =>
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
@@ -81,7 +84,7 @@ begin
 
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA4;
@@ -89,7 +92,7 @@ begin
 
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -98,7 +101,7 @@ begin
 
             when ASTEPT_CIFRA3 =>
                 liberOcupat <= '1';
-                introduCaractere <= '1';
+                introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -120,6 +123,7 @@ begin
             when others =>
                 nextState <= LIBER;
         end case;
+        liberOcupatLED <= liberOcupat;
     end process;
 
 end Behavioral;

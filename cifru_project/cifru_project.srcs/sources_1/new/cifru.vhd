@@ -1,46 +1,58 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 06.04.2024 00:22:52
--- Design Name: 
--- Module Name: cifru - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
+use IEEE.STD_LOGIC_1164.all;
 entity cifru is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-	   up,down,addCifra : in STD_LOGIC);
-	   
+    port (
+        clk : in std_logic;
+        reset : in std_logic;
+        up, down, addCifra : in std_logic;
+        liberOcupatLED : out std_logic;
+        introduCaractereLED : out std_logic
+    );
+
 end cifru;
 
 architecture Behavioral of cifru is
+    component UnitateControl is
+        port (
+            clk : in std_logic;
+            reset : in std_logic;
+            addCifra : in std_logic;
+            enableCompare : out std_logic;
+            checkedMatch : in std_logic;
+            enableAnod1 : sout std_logic;
+            enableAnod2 : out std_logic;
+            enableAnod3 : out std_logic;
+            match : in std_logic;
 
+            liberOcupat : out std_logic;
+            liberOcupatLED : out std_logic;
+            introduCaractereLED : out std_logic);
+    end component;
+
+    component UnitateExecutie is
+        port (
+            clk : in std_logic;
+            liberOcupat : in std_logic;
+            enableAnod1 : in std_logic;
+            enableAnod2 : in std_logic;
+            enableAnod3 : in std_logic;
+            up : in std_logic;
+            down : in std_logic;
+            enableCompare : in std_logic;
+            checkedMatch : out std_logic;
+            match : out std_logic
+        );
+    end component;
+
+    signal enableCompare : std_logic;
+    signal checkedMatch : std_logic;
+    signal match : std_logic;
+    signal liberOcupat : std_logic;
+    signal enableAnod1 : std_logic;
+    signal enableAnod2 : std_logic;
+    signal enableAnod3 : std_logic;
 begin
-
-
+    control : UnitateControl port map(clk, reset, addCifra, enableCompare, checkedMatch, enableAnod1, enableAnod2, enableAnod3, match, liberOcupat, liberOcupatLED, introduCaractereLED);
+    executie : UnitateExecutie port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, enableCompare, checkedMatch, match);
 end Behavioral;
