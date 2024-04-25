@@ -7,7 +7,9 @@ entity cifru is
         reset : in std_logic;
         up, down, addCifra : in std_logic;
         liberOcupatLED : out std_logic;
-        introduCaractereLED : out std_logic
+        introduCaractereLED : out std_logic;
+        anodActiv : out std_logic_vector (7 downto 0);
+        segmentOutLED : out std_logic_vector (6 downto 0)
     );
 
 end cifru;
@@ -41,7 +43,9 @@ architecture Behavioral of cifru is
             down : in std_logic;
             enableCompare : in std_logic;
             checkedMatch : out std_logic;
-            match : out std_logic
+            match : out std_logic;
+            anodActiv : out std_logic_vector (7 downto 0);
+            segmentOutLED : out std_logic_vector (6 downto 0)
         );
     end component;
 

@@ -12,7 +12,9 @@ entity UnitateExecutie is
         down : in std_logic;
         enableCompare : in std_logic;
         checkedMatch : out std_logic;
-        match : out std_logic
+        match : out std_logic;
+        anodActiv : out std_logic_vector (7 downto 0);
+        segmentOutLED : out std_logic_vector (6 downto 0)
     );
 end UnitateExecutie;
 
@@ -80,6 +82,8 @@ architecture Behavioral of UnitateExecutie is
     signal writeEnableRamCifru : std_logic;
     signal writeEnableRamCifreCurente : std_logic;
 
+    signal sevenSegClk : std_logic;
+
 begin
     mpgUp : MPG port map(up, clk, upDebounced);
     mpgDown : MPG port map(up, clk, downDebounced);
@@ -87,6 +91,8 @@ begin
 
     ramCifru : RamCifru port map(address, writeEnableRamCifru, dataIn, rcdo0, rcdo1, rcdo2);
     ramCifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn, rccdo0, rccdo1, rccdo2);
+
+    mpgDisplay : MPG port map(clk, clk, sevenSegClk);
 
     comparator : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
 end Behavioral;
