@@ -7,7 +7,8 @@ entity MPG is
   port (
     btn : in std_logic;
     clk : in std_logic;
-    debounced : out std_logic);
+    debounced : out std_logic
+  );
 end MPG;
 
 architecture Behavioral of MPG is

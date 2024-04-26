@@ -16,7 +16,8 @@ entity UnitateControl is
         match : in std_logic;
         liberOcupat : out std_logic;
         liberOcupatLED : out std_logic;
-        introduCaractereLED : out std_logic);
+        introduCaractereLED : out std_logic
+    );
 end UnitateControl;
 
 architecture Behavioral of UnitateControl is

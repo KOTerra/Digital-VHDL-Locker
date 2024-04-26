@@ -72,6 +72,29 @@ architecture Behavioral of UnitateExecutie is
         );
     end component;
 
+    component DisplayController is
+        port (
+            liberOcupat : in std_logic;
+            rcdo0, rcdo1, rcdo2 : in std_logic_vector(3 downto 0);
+            rccdo0, rccdo1, rccdo2 : in std_logic_vector(3 downto 0);
+            displayValue1, displayValue2, displayValue3 : out std_logic_vector(3 downto 0)
+        );
+    end component;
+
+    component SevenSegmentDisplay is
+        port (
+            clk : in std_logic;
+            enableAnod1 : in std_logic;
+            enableAnod2 : in std_logic;
+            enableAnod3 : in std_logic;
+            displayValue1 : in std_logic_vector (3 downto 0);
+            displayValue2 : in std_logic_vector (3 downto 0);
+            displayValue3 : in std_logic_vector (3 downto 0);
+            anodActiv : out std_logic_vector (7 downto 0);
+            segmentOutLED : out std_logic_vector (6 downto 0)
+        );
+    end component;
+
     signal match : std_logic;
     signal upDebounced : std_logic;
     signal downDebounced : std_logic;
@@ -83,6 +106,7 @@ architecture Behavioral of UnitateExecutie is
     signal writeEnableRamCifreCurente : std_logic;
 
     signal sevenSegClk : std_logic;
+    signal displayValue1, displayValue2, displayValue3 : std_logic_vector(3 downto 0);
 
 begin
     mpgUp : MPG port map(up, clk, upDebounced);
@@ -92,7 +116,10 @@ begin
     ramCifru : RamCifru port map(address, writeEnableRamCifru, dataIn, rcdo0, rcdo1, rcdo2);
     ramCifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn, rccdo0, rccdo1, rccdo2);
 
-    mpgDisplay : MPG port map(clk, clk, sevenSegClk);
-
     comparator : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
+
+    mpgDisplay : MPG port map(clk, clk, sevenSegClk);
+    displayController : DisplayController port map(liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, displayValue1, displayValue2, displayValue3);
+    display : SevenSegmentDisplay port map(sevenSegClk, enableAnod1, enableAnod2, enableAnod3, displayValue1, displayValue2, displayValue3, anodActiv, segmentOutLED); ---display controller select values
+
 end Behavioral;
