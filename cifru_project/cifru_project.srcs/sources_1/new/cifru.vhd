@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 entity cifru is
@@ -27,7 +26,7 @@ architecture Behavioral of cifru is
             enableAnod3 : out std_logic;
             match : in std_logic;
 
-            liberOcupat : out std_logic;
+            liberOcupat : inout std_logic;
             liberOcupatLED : out std_logic;
             introduCaractereLED : out std_logic);
     end component;

@@ -4,9 +4,9 @@ use IEEE.NUMERIC_STD.all;
 
 entity RamCifreCurente is
     port (
-        address : in std_logic_vector (1 downto 0); --Adresele
-        writeEnable : in std_logic; -- Semnal validare scriere, �Write Enable"
-        data : inout std_logic_vector (3 downto 0); -- Ie?iri de date (bidirectional)
+        address : in std_logic_vector (1 downto 0);
+        writeEnable : in std_logic;
+        data : inout std_logic_vector (3 downto 0);
         dataOut0 : out std_logic_vector(3 downto 0);
         dataOut1 : out std_logic_vector(3 downto 0);
         dataOut2 : out std_logic_vector(3 downto 0)

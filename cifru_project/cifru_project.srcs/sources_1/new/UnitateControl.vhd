@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
@@ -14,7 +13,7 @@ entity UnitateControl is
         enableAnod2 : out std_logic;
         enableAnod3 : out std_logic;
         match : in std_logic;
-        liberOcupat : out std_logic;
+        liberOcupat : inout std_logic;
         liberOcupatLED : out std_logic;
         introduCaractereLED : out std_logic
     );
