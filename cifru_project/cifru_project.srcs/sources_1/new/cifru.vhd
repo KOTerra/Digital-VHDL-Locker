@@ -21,14 +21,15 @@ architecture Behavioral of cifru is
             addCifra : in std_logic;
             enableCompare : out std_logic;
             checkedMatch : in std_logic;
-            enableAnod1 : sout std_logic;
+            enableAnod1 : out std_logic;
             enableAnod2 : out std_logic;
             enableAnod3 : out std_logic;
             match : in std_logic;
 
             liberOcupat : inout std_logic;
             liberOcupatLED : out std_logic;
-            introduCaractereLED : out std_logic);
+            introduCaractereLED : out std_logic
+        );
     end component;
 
     component UnitateExecutie is
@@ -43,6 +44,7 @@ architecture Behavioral of cifru is
             enableCompare : in std_logic;
             checkedMatch : out std_logic;
             match : out std_logic;
+
             anodActiv : out std_logic_vector (7 downto 0);
             segmentOutLED : out std_logic_vector (6 downto 0)
         );
@@ -57,5 +59,5 @@ architecture Behavioral of cifru is
     signal enableAnod3 : std_logic;
 begin
     control : UnitateControl port map(clk, reset, addCifra, enableCompare, checkedMatch, enableAnod1, enableAnod2, enableAnod3, match, liberOcupat, liberOcupatLED, introduCaractereLED);
-    executie : UnitateExecutie port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, enableCompare, checkedMatch, match);
+    executie : UnitateExecutie port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, enableCompare, checkedMatch, match, anodActiv, segmentOutLED);
 end Behavioral;
