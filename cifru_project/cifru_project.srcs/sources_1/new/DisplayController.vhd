@@ -16,6 +16,7 @@ end entity;
 architecture Behavioral of DisplayController is
 begin
     process (liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2)
+    begin
         if liberOcupat = '1' then --ocupat
             displayValue1 <= rccdo0;
             displayValue2 <= rccdo1;

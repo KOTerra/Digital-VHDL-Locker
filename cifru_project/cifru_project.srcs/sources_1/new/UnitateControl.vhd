@@ -90,7 +90,7 @@ begin
                     nextState <= ASTEPT_CIFRA4;
                 end if;
 
-            when ASTEPT_CIFRA3 =>
+            when ASTEPT_CIFRA4 =>
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
@@ -99,7 +99,7 @@ begin
                     nextState <= ASTEPT_CIFRA5;
                 end if;
 
-            when ASTEPT_CIFRA3 =>
+            when ASTEPT_CIFRA5 =>
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';

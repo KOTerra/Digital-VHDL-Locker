@@ -23,7 +23,7 @@ architecture Behavioral of SevenSegmentDisplay is
     signal count : std_logic_vector(1 downto 0) := "00"; --index anod curent
     signal displayValueAtCount : std_logic_vector(3 downto 0) := "0000"; --val curenta pe anod curent
 begin
-    process (enableAnod0, enableAnod1, enableAnod2)
+    process (enableAnod1, enableAnod2, enableAnod3)
     begin
         --count <= "00";
         if enableAnod3 = '1' and enableAnod2 = '1' and enableAnod1 = '1' then

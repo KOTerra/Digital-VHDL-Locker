@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.all;
 entity UnitateExecutie is
     port (
         clk : in std_logic;
+	reset : in std_logic;
         liberOcupat : in std_logic;
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
@@ -35,7 +36,8 @@ architecture Behavioral of UnitateExecutie is
             up : in std_logic;
             down : in std_logic;
             address : out std_logic_vector(1 downto 0);
-            data : out std_logic(3 downto 0);
+            data1 : inout std_logic_vector(3 downto 0);
+            data2 : inout std_logic_vector(3 downto 0);
             writeEnableRamCifru : out std_logic;
             writeEnableRamCifreCurente : out std_logic
         );
@@ -45,7 +47,7 @@ architecture Behavioral of UnitateExecutie is
         port (
             address : in std_logic_vector (1 downto 0);
             writeEnable : in std_logic;
-            data : inout std_logic_vector (3 downto 0);
+            data : in std_logic_vector (3 downto 0);
             dataOut0 : out std_logic_vector(3 downto 0);
             dataOut1 : out std_logic_vector(3 downto 0);
             dataOut2 : out std_logic_vector(3 downto 0));
@@ -55,7 +57,7 @@ architecture Behavioral of UnitateExecutie is
         port (
             address : in std_logic_vector (1 downto 0);
             writeEnable : in std_logic;
-            data : inout std_logic_vector (3 downto 0);
+            data : in std_logic_vector (3 downto 0);
             dataOut0 : out std_logic_vector(3 downto 0);
             dataOut1 : out std_logic_vector(3 downto 0);
             dataOut2 : out std_logic_vector(3 downto 0));
@@ -94,11 +96,13 @@ architecture Behavioral of UnitateExecutie is
         );
     end component;
 
-    signal match : std_logic;
+   
     signal upDebounced : std_logic;
     signal downDebounced : std_logic;
     signal address : std_logic_vector(1 downto 0);
     signal dataIn : std_logic_vector(3 downto 0);
+    signal dataIn1 : std_logic_vector(3 downto 0);
+    signal dataIn2 : std_logic_vector(3 downto 0);
     signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0);
     signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0);
     signal writeEnableRamCifru : std_logic;
@@ -110,15 +114,15 @@ architecture Behavioral of UnitateExecutie is
 begin
     mpgUp : MPG port map(up, clk, upDebounced);
     mpgDown : MPG port map(up, clk, downDebounced);
-    ramController : RamController port map(liberOcupatt, enableAnod1, enableAnod2, enableAnod3, upDebounced, downDebounced, address, dataIn, writeEnableRamCifru, writeEnableRamCifreCurente);
+    ram_Controller : RamController port map(liberOcupat, enableAnod1, enableAnod2, enableAnod3, upDebounced, downDebounced, address, dataIn1,dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
 
-    ramCifru : RamCifru port map(address, writeEnableRamCifru, dataIn, rcdo0, rcdo1, rcdo2);
-    ramCifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn, rccdo0, rccdo1, rccdo2);
+    ram_Cifru : RamCifru port map(address, writeEnableRamCifru, dataIn1, rcdo0, rcdo1, rcdo2);
+    ram_CifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn2, rccdo0, rccdo1, rccdo2);
 
-    comparator : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
+    comparator_a : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
 
     mpgDisplay : MPG port map(clk, clk, sevenSegClk);
-    displayController : DisplayController port map(liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, displayValue1, displayValue2, displayValue3);
+    display_Controller : DisplayController port map(liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, displayValue1, displayValue2, displayValue3);
     display : SevenSegmentDisplay port map(sevenSegClk, enableAnod1, enableAnod2, enableAnod3, displayValue1, displayValue2, displayValue3, anodActiv, segmentOutLED); ---display controller select values
 
 end Behavioral;
