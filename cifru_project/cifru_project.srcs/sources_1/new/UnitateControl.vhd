@@ -48,6 +48,8 @@ begin
             when LIBER =>
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA0;
+                    else 
+                    nextState<=LIBER;
                 end if;
 
             when ASTEPT_CIFRA0 =>

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun May 12 19:34:32 2024
-| Host         : POWERSLAVE running 64-bit major release  (build 9200)
+| Date         : Mon May 13 18:47:51 2024
+| Host         : anon running 64-bit major release  (build 9200)
 | Command      : report_methodology -file cifru_methodology_drc_routed.rpt -pb cifru_methodology_drc_routed.pb -rpx cifru_methodology_drc_routed.rpx
 | Design       : cifru
 | Device       : xc7a100tcsg324-1
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 11
+             Violations found: 16
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell    | 2          |
 | TIMING-18 | Warning          | Missing input or output delay  | 3          |
-| TIMING-20 | Warning          | Non-clocked latch              | 5          |
+| TIMING-20 | Warning          | Non-clocked latch              | 10         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -62,32 +62,57 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch control/FSM_sequential_nextState_reg[0] cannot be properly analyzed as its control pin control/FSM_sequential_nextState_reg[0]/G is not reached by a timing clock
+The latch control/FSM_onehot_nextState_reg[0] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch control/FSM_sequential_nextState_reg[1] cannot be properly analyzed as its control pin control/FSM_sequential_nextState_reg[1]/G is not reached by a timing clock
+The latch control/FSM_onehot_nextState_reg[1] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch control/FSM_sequential_nextState_reg[2] cannot be properly analyzed as its control pin control/FSM_sequential_nextState_reg[2]/G is not reached by a timing clock
+The latch control/FSM_onehot_nextState_reg[2] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch control/FSM_sequential_nextState_reg[3] cannot be properly analyzed as its control pin control/FSM_sequential_nextState_reg[3]/G is not reached by a timing clock
+The latch control/FSM_onehot_nextState_reg[3] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
+Non-clocked latch  
+The latch control/FSM_onehot_nextState_reg[4] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch control/FSM_onehot_nextState_reg[5] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch control/FSM_onehot_nextState_reg[6] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch control/FSM_onehot_nextState_reg[7] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch control/FSM_onehot_nextState_reg[8] cannot be properly analyzed as its control pin control/FSM_onehot_nextState_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
 Non-clocked latch  
 The latch executie/comparator_a/match_reg cannot be properly analyzed as its control pin executie/comparator_a/match_reg/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 5 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 10 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
