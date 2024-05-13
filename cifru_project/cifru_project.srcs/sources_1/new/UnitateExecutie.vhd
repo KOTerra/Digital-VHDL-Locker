@@ -121,8 +121,7 @@ begin
 
     comparator_a : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
 
-    mpgDisplay : MPG port map(clk, clk, sevenSegClk);
     display_Controller : DisplayController port map(liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, displayValue1, displayValue2, displayValue3);
-    display : SevenSegmentDisplay port map(sevenSegClk, enableAnod1, enableAnod2, enableAnod3, displayValue1, displayValue2, displayValue3, anodActiv, segmentOutLED); ---display controller select values
+    display : SevenSegmentDisplay port map(clk, enableAnod1, enableAnod2, enableAnod3, displayValue1, displayValue2, displayValue3, anodActiv, segmentOutLED); ---display controller select values
 
 end Behavioral;

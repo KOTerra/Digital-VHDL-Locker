@@ -29,6 +29,7 @@ begin
     begin
         if reset = '1' then
             currentState <= LIBER;
+            
         elsif rising_edge(clk) then
             currentState <= nextState;
         end if;
@@ -54,6 +55,7 @@ begin
 
             when ASTEPT_CIFRA0 =>
                 introduCaractereLED <= '1';
+                liberOcupat<='0';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
@@ -61,6 +63,7 @@ begin
 
             when ASTEPT_CIFRA1 =>
                 introduCaractereLED <= '1';
+                liberOcupat<='0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -69,6 +72,7 @@ begin
 
             when ASTEPT_CIFRA2 =>
                 introduCaractereLED <= '1';
+                liberOcupat<='0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';

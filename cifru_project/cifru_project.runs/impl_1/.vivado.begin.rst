@@ -33,3 +33,23 @@
     <Process Command="vivado.bat" Owner="vlads" Host="ANON" Pid="13260" HostCore="16" HostMemory="024956506112">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vlads" Host="ANON" Pid="2700" HostCore="16" HostMemory="024956506112">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vlads" Host="ANON" Pid="15228" HostCore="16" HostMemory="024956506112">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vlads" Host="ANON" Pid="9976" HostCore="16" HostMemory="024956506112">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vlads" Host="ANON" Pid="22084" HostCore="16" HostMemory="024956506112">
+    </Process>
+</ProcessHandle>

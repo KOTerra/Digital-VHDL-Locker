@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon May 13 18:47:51 2024
+| Date             : Mon May 13 19:21:23 2024
 | Host             : anon running 64-bit major release  (build 9200)
 | Command          : report_power -file cifru_power_routed.rpt -pb cifru_power_summary_routed.pb -rpx cifru_power_routed.rpx
 | Design           : cifru
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.105        |
+| Total On-Chip Power (W)  | 0.104        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.008        |
+| Dynamic (W)              | 0.007        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       75 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       16 |     63400 |            0.03 |
-|   CARRY4       |    <0.001 |        4 |     15850 |            0.03 |
-|   Register     |    <0.001 |       40 |    126800 |            0.03 |
-|   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |    <0.001 |       59 |       --- |             --- |
-| I/O            |     0.007 |       20 |       210 |            9.52 |
+| Slice Logic    |    <0.001 |       43 |       --- |             --- |
+|   LUT as Logic |    <0.001 |        9 |     63400 |            0.01 |
+|   Register     |    <0.001 |       21 |    126800 |            0.02 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |       34 |       --- |             --- |
+| I/O            |     0.006 |       20 |       210 |            9.52 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.105 |          |           |                 |
+| Total          |     0.104 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +139,7 @@ Table of Contents
 +-------+-----------+
 | Name  | Power (W) |
 +-------+-----------+
-| cifru |     0.008 |
+| cifru |     0.007 |
 +-------+-----------+
 
 
