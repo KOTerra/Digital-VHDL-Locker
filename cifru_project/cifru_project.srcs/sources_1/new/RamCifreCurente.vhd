@@ -16,14 +16,14 @@ end RamCifreCurente;
 architecture Behavioral of RamCifreCurente is
     type RamArray is array(0 to 2) of std_logic_vector(3 downto 0);
     signal memory : RamArray := (
-      "0000","0000","0000"
+        "0000", "0000", "0000"
     );
 begin
     process (address, writeEnable, data)
     begin
         if writeEnable = '0' then --read
             memory(to_integer(unsigned(address))) <= data;
-        
+
         end if;
         dataOut0 <= memory(0);
         dataOut1 <= memory(1);

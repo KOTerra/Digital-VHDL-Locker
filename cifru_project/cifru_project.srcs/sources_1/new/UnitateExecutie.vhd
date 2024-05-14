@@ -97,16 +97,16 @@ architecture Behavioral of UnitateExecutie is
     end component;
 
    
-    signal upDebounced : std_logic;
-    signal downDebounced : std_logic;
-    signal address : std_logic_vector(1 downto 0);
-    signal dataIn : std_logic_vector(3 downto 0);
-    signal dataIn1 : std_logic_vector(3 downto 0);
-    signal dataIn2 : std_logic_vector(3 downto 0);
-    signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0);
-    signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0);
-    signal writeEnableRamCifru : std_logic;
-    signal writeEnableRamCifreCurente : std_logic;
+    signal upDebounced : std_logic:='0';
+    signal downDebounced : std_logic:='0';
+    signal address : std_logic_vector(1 downto 0):="00";
+    signal dataIn : std_logic_vector(3 downto 0):="0000";
+    signal dataIn1 : std_logic_vector(3 downto 0):="0000";
+    signal dataIn2 : std_logic_vector(3 downto 0):="0000";
+    signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0):="0000";
+    signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0):="0000";
+    signal writeEnableRamCifru : std_logic:='0';
+    signal writeEnableRamCifreCurente : std_logic:='0';
 
     signal sevenSegClk : std_logic;
     signal displayValue1, displayValue2, displayValue3 : std_logic_vector(3 downto 0);

@@ -34,13 +34,12 @@ begin
     process (enableAnod1, enableAnod2, enableAnod3)
     begin
         if enableAnod3 = '1' and enableAnod2 = '1' and enableAnod1 = '1' then
-            address <= "11";
-        elsif enableAnod2 = '1' and enableAnod1 = '1' then
             address <= "10";
-        elsif enableAnod1 = '1' then
+        elsif enableAnod2 = '1' and enableAnod1 = '1' then
             address <= "01";
-        else
+        elsif enableAnod1 = '1' then
             address <= "00";
+  
         end if;
     end process;
 

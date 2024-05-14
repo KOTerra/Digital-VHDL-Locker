@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1715617197" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cifru.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1715694375" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cifru.dcp">
   <File Type="PA-TCL" Name="cifru.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="cifru_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cifru_reports.tcl"/>
   <File Type="RDS-RDS" Name="cifru.vds"/>
   <File Type="RDS-UTIL" Name="cifru_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cifru_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cifru.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cifru_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="cifru_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/DisplayController.vhd">
