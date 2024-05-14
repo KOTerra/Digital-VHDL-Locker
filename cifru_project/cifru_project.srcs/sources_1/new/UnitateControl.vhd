@@ -29,7 +29,7 @@ begin
     begin
         if reset = '1' then
             currentState <= LIBER;
-            
+
         elsif rising_edge(clk) then
             currentState <= nextState;
         end if;
@@ -47,23 +47,26 @@ begin
 
         case currentState is
             when LIBER =>
+                report "CURRENT STATE: liber" severity warning;
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA0;
-                    else 
-                    nextState<=LIBER;
+                else
+                    nextState <= LIBER;
                 end if;
 
             when ASTEPT_CIFRA0 =>
+                report "CURRENT STATE: c0"severity warning;
                 introduCaractereLED <= '1';
-                liberOcupat<='0';
+                liberOcupat <= '0';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
             when ASTEPT_CIFRA1 =>
+                report "CURRENT STATE: c1" severity warning;
                 introduCaractereLED <= '1';
-                liberOcupat<='0';
+                liberOcupat <= '0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -71,8 +74,9 @@ begin
                 end if;
 
             when ASTEPT_CIFRA2 =>
+                report "CURRENT STATE: c2" severity warning;
                 introduCaractereLED <= '1';
-                liberOcupat<='0';
+                liberOcupat <= '0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
@@ -83,12 +87,16 @@ begin
                 -----
 
             when OCUPAT =>
+                report "CURRENT STATE: ocupat" severity warning;
+
                 liberOcupat <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA3;
                 end if;
 
             when ASTEPT_CIFRA3 =>
+                report "CURRENT STATE: c3"severity warning;
+
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
@@ -97,6 +105,8 @@ begin
                 end if;
 
             when ASTEPT_CIFRA4 =>
+                report "CURRENT STATE: c4"severity warning;
+
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
@@ -106,6 +116,8 @@ begin
                 end if;
 
             when ASTEPT_CIFRA5 =>
+                report "CURRENT STATE: c5"severity warning;
+
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
@@ -116,6 +128,8 @@ begin
                 ---sau un wait 
 
             when ASTEPT_MATCH =>
+                report "CURRENT STATE: match" severity warning;
+
                 enableCompare <= '1';
                 if checkedMatch = '0' then
                     nextState <= ASTEPT_MATCH;

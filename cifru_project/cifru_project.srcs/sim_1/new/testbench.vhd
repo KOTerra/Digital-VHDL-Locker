@@ -41,26 +41,29 @@ begin
         end loop;
     end process;
 
----------
+    ---------
 
     testprocess : process
     begin
-        addCifra_tb<='1';
-        wait for 10ns;
-        addCifra_tb<='0';
-
-        up_tb<='1';
-        wait for 10ns;
-        up_tb<='0';
-        wait for 10ns;
-        up_tb<='1';
-        
-        wait for 10ns;
-        
-        addCifra_tb<='1';
-        wait for 10ns;
-        addCifra_tb<='0';
-
+        addCifra_tb <= '1';
+        wait for 100ns;
+        addCifra_tb <= '0';
+        wait for 100ns;
+        addCifra_tb <= '1';
+        wait for 100ns;
+        addCifra_tb <= '0';
+        wait for 100ns;
+        addCifra_tb <= '1';
+        wait for 100ns;
+        addCifra_tb <= '0';
+        wait for 100ns;
+        addCifra_tb <= '1';
+        wait for 100ns;
+        addCifra_tb <= '0';
+        wait for 100ns;
+        addCifra_tb <= '1';
+        wait for 100ns;
+        addCifra_tb <= '0';
 
     end process;
 
