@@ -25,6 +25,7 @@ architecture Behavioral of UnitateControl is
     signal currentState, nextState : state;
 begin
 
+
     act : process (reset, clk)
     begin
         if reset = '1' then
@@ -47,7 +48,7 @@ begin
 
         case currentState is
             when LIBER =>
-                report "CURRENT STATE: liber" severity warning;
+                report "CURRENT STATE: liber" severity note;
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA0;
                 else
@@ -55,7 +56,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA0 =>
-                report "CURRENT STATE: c0"severity warning;
+                report "CURRENT STATE: c0"severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
                 enableAnod1 <= '1';
@@ -64,7 +65,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA1 =>
-                report "CURRENT STATE: c1" severity warning;
+                report "CURRENT STATE: c1" severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
                 enableAnod1 <= '1';
@@ -74,7 +75,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA2 =>
-                report "CURRENT STATE: c2" severity warning;
+                report "CURRENT STATE: c2" severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
                 enableAnod1 <= '1';
@@ -87,7 +88,7 @@ begin
                 -----
 
             when OCUPAT =>
-                report "CURRENT STATE: ocupat" severity warning;
+                report "CURRENT STATE: ocupat" severity note;
 
                 liberOcupat <= '1';
                 if addCifra = '1' then
@@ -95,7 +96,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA3 =>
-                report "CURRENT STATE: c3"severity warning;
+                report "CURRENT STATE: c3"severity note;
 
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
@@ -105,7 +106,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA4 =>
-                report "CURRENT STATE: c4"severity warning;
+                report "CURRENT STATE: c4"severity note;
 
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
@@ -116,7 +117,7 @@ begin
                 end if;
 
             when ASTEPT_CIFRA5 =>
-                report "CURRENT STATE: c5"severity warning;
+                report "CURRENT STATE: c5"severity note;
 
                 liberOcupat <= '1';
                 introduCaractereLED <= '1';
@@ -128,7 +129,7 @@ begin
                 ---sau un wait 
 
             when ASTEPT_MATCH =>
-                report "CURRENT STATE: match" severity warning;
+                report "CURRENT STATE: match" severity note;
 
                 enableCompare <= '1';
                 if checkedMatch = '0' then

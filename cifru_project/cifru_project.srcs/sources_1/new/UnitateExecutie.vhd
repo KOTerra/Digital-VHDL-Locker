@@ -1,9 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
 entity UnitateExecutie is
     port (
         clk : in std_logic;
-	reset : in std_logic;
+        reset : in std_logic;
         liberOcupat : in std_logic;
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
@@ -29,6 +30,7 @@ architecture Behavioral of UnitateExecutie is
 
     component RamController is
         port (
+            clk : in std_logic;
             liberOcupat : in std_logic;
             enableAnod1 : in std_logic;
             enableAnod2 : in std_logic;
@@ -96,25 +98,32 @@ architecture Behavioral of UnitateExecutie is
         );
     end component;
 
-   
-    signal upDebounced : std_logic:='0';
-    signal downDebounced : std_logic:='0';
-    signal address : std_logic_vector(1 downto 0):="00";
-    signal dataIn : std_logic_vector(3 downto 0):="0000";
-    signal dataIn1 : std_logic_vector(3 downto 0):="0000";
-    signal dataIn2 : std_logic_vector(3 downto 0):="0000";
-    signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0):="0000";
-    signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0):="0000";
-    signal writeEnableRamCifru : std_logic:='0';
-    signal writeEnableRamCifreCurente : std_logic:='0';
+ 
+    signal address : std_logic_vector(1 downto 0) := "00";
+    signal dataIn : std_logic_vector(3 downto 0):= "0000";
+    signal dataIn1 : std_logic_vector(3 downto 0):= "0000";
+    signal dataIn2 : std_logic_vector(3 downto 0):= "0000";
+    signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0) := "0000";
+    signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0) := "0000";
+    signal writeEnableRamCifru : std_logic := '0';
+    signal writeEnableRamCifreCurente : std_logic := '0';
 
     signal sevenSegClk : std_logic;
     signal displayValue1, displayValue2, displayValue3 : std_logic_vector(3 downto 0);
 
 begin
-    mpgUp : MPG port map(up, clk, upDebounced);
-    mpgDown : MPG port map(up, clk, downDebounced);
-    ram_Controller : RamController port map(liberOcupat, enableAnod1, enableAnod2, enableAnod3, upDebounced, downDebounced, address, dataIn1,dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
+    logg : process(clk)
+    begin
+        if up = '1' then
+            report "UP" severity note;
+        else
+            --report "NOT_UP" severity note;
+
+        end if;
+      
+    end process;
+
+    ram_Controller : RamController port map(clk, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
 
     ram_Cifru : RamCifru port map(address, writeEnableRamCifru, dataIn1, rcdo0, rcdo1, rcdo2);
     ram_CifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn2, rccdo0, rccdo1, rccdo2);
