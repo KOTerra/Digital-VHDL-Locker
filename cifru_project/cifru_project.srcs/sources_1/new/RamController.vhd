@@ -56,7 +56,7 @@ begin
             aux <= data1 + 1;
             data1 <= aux;
             
-            report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
+           report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
         end if;
         if liberOcupat = '0' and down = '1' and up = '0' then
             aux <= data1 - 1;

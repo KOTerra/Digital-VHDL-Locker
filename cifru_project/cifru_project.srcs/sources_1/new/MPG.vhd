@@ -40,6 +40,7 @@ begin
       Q2 <= Q1;
       Q3 <= Q2;
     end if;
+
   end process;
 
   debounced <= not Q3 and Q2;

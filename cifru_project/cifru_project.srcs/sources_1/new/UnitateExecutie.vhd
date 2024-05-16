@@ -98,11 +98,10 @@ architecture Behavioral of UnitateExecutie is
         );
     end component;
 
- 
     signal address : std_logic_vector(1 downto 0) := "00";
-    signal dataIn : std_logic_vector(3 downto 0):= "0000";
-    signal dataIn1 : std_logic_vector(3 downto 0):= "0000";
-    signal dataIn2 : std_logic_vector(3 downto 0):= "0000";
+    signal dataIn : std_logic_vector(3 downto 0) := "0000";
+    signal dataIn1 : std_logic_vector(3 downto 0) := "0000";
+    signal dataIn2 : std_logic_vector(3 downto 0) := "0000";
     signal rcdo0, rcdo1, rcdo2 : std_logic_vector(3 downto 0) := "0000";
     signal rccdo0, rccdo1, rccdo2 : std_logic_vector(3 downto 0) := "0000";
     signal writeEnableRamCifru : std_logic := '0';
@@ -112,15 +111,19 @@ architecture Behavioral of UnitateExecutie is
     signal displayValue1, displayValue2, displayValue3 : std_logic_vector(3 downto 0);
 
 begin
-    logg : process(clk)
+    logg : process (up, liberOcupat)
     begin
         if up = '1' then
-            report "UP" severity note;
+           -- report "UP" severity note;
         else
             --report "NOT_UP" severity note;
 
         end if;
-      
+        if liberOcupat = '1' then
+            report "OCUPAT" severity note;
+        else
+            report "LIBER" severity note;
+        end if;
     end process;
 
     ram_Controller : RamController port map(clk, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);

@@ -25,19 +25,18 @@ architecture Behavioral of UnitateControl is
     signal currentState, nextState : state;
 begin
 
-
-    act : process (reset, clk)
+    act : process (clk, reset)
     begin
         if reset = '1' then
             currentState <= LIBER;
-
         elsif rising_edge(clk) then
             currentState <= nextState;
         end if;
     end process;
 
-    changeState : process (currentState, match, checkedMatch)
+    changeState : process (addCifra, currentState, match, checkedMatch)
     begin
+
         liberOcupat <= '0';
         introduCaractereLED <= '0';
         enableCompare <= '0';
@@ -137,8 +136,10 @@ begin
                 else
                     if match = '1' then
                         nextState <= LIBER;
+                        liberOcupat <= '0';
                     elsif match = '0' then
                         nextState <= OCUPAT;
+                        liberOcupat <= '1';
                     end if;
                 end if;
             when others =>
