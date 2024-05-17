@@ -1,402 +1,240 @@
 Time resolution is 1 ps
-Note: LIBER
-Time: 0 ps  Iteration: 0  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
 Note: CURRENT STATE: liber
 Time: 0 ps  Iteration: 0  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: liber
 Time: 0 ps  Iteration: 1  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 0 ps  Iteration: 1  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
 Note: CURRENT STATE: liber
+Time: 12 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: c0
+Time: 13 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: c0
 Time: 14 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 32 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 32 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 33 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 34 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=1
+Time: 52 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 53 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=2
+Time: 54 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 72 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=3
+Time: 73 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 74 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=4
+Time: 92 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 93 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=3
+Time: 94 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 112 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=2
+Time: 113 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 114 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c0
-Time: 33 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 34 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 132 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c1
-Time: 35 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 133 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c1
-Time: 52 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 134 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data1D=3
+Time: 152 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 153 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=2
+Time: 154 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 172 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=1
+Time: 173 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 174 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 192 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 193 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=15
+Time: 194 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: CURRENT STATE: c1
+Time: 212 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c2
-Time: 53 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 213 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c2
-Time: 54 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 214 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: c2
+Time: 232 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
-Time: 55 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 2
-Time: 55 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 55 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 72 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 233 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
-Time: 72 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 73 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 74 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 75 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 102 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 103 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 104 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 105 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 105 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 105 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 107 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 107 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 122 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 123 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 124 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 125 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 142 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 143 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 144 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 233 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
-Time: 145 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 145 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 145 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 162 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 234 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
-Time: 162 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 163 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 164 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 165 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 182 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 183 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 184 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 185 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 185 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 185 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 187 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 187 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 202 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 203 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 204 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 205 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 222 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 223 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 224 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 234 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
-Time: 225 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 225 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 225 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 242 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 262 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
-Time: 242 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 262 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c3
-Time: 243 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 263 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c3
-Time: 244 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 245 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 272 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 273 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 274 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 275 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 275 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 275 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 277 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 277 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 292 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 293 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 294 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 295 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 312 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 313 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 314 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 315 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 315 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 315 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 332 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 0
-Time: 332 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 264 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 282 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=14
+Time: 283 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 284 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=15
+Time: 302 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 303 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 304 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 322 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=1
+Time: 323 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 324 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=2
+Time: 342 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 343 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=1
+Time: 344 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 362 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 363 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 364 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c3
-Time: 333 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 334 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 382 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c4
-Time: 335 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 383 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c4
-Time: 352 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 353 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 354 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 355 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 355 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 355 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 357 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 357 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 372 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 373 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 374 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 375 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 392 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 393 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 394 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 395 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 395 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 395 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 412 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 0
-Time: 412 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 413 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 414 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 384 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data2D=1
+Time: 402 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 403 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 404 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 422 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=15
+Time: 423 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 424 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=14
+Time: 442 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 443 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=13
+Time: 444 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c4
-Time: 415 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 442 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 443 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 444 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 445 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 445 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 445 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 447 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 447 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
 Time: 462 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
+Note: CURRENT STATE: c5
 Time: 463 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
+Note: CURRENT STATE: c5
 Time: 464 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 465 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
+Note: CURRENT STATE: c5
 Time: 482 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
+Note: CURRENT STATE: match
 Time: 483 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
+Note: CURRENT STATE: match
+Time: 483 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: match
 Time: 484 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
+Note: CURRENT STATE: liber
 Time: 485 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 485 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 485 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
+Note: CURRENT STATE: liber
+Time: 485 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: liber
 Time: 502 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 0
-Time: 502 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
+Note: CURRENT STATE: c0
 Time: 503 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
+Note: CURRENT STATE: c0
 Time: 504 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 505 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 522 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 523 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 524 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 525 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 525 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 525 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 527 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 527 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 542 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 522 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=12
+Time: 523 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 524 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=13
+Time: 542 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 543 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=14
+Time: 544 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 562 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=15
+Time: 563 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 564 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 582 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 583 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=15
+Time: 584 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 602 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=14
+Time: 603 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1U=0
+Time: 604 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c0
-Time: 543 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 544 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 622 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c1
-Time: 545 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 623 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c1
-Time: 562 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 624 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data1D=15
+Time: 642 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 643 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=14
+Time: 644 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 662 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=13
+Time: 663 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 664 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=12
+Time: 682 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=0
+Time: 683 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data1D=11
+Time: 684 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: CURRENT STATE: c1
+Time: 702 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c2
-Time: 563 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 703 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c2
-Time: 564 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 704 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: c2
+Time: 722 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
-Time: 565 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 565 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 565 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 582 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 723 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
-Time: 582 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 583 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 584 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 585 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 612 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 613 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 614 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 615 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 615 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 615 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 617 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 617 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 632 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 633 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 634 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 635 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 652 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 653 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 654 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 723 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
-Time: 655 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 655 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 655 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 672 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 724 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
-Time: 672 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 673 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 674 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 675 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 692 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 693 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 694 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 695 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 695 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 695 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 697 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 697 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 712 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 713 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 714 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 715 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 732 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 733 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 734 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 735 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 735 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 735 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
+Time: 724 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: ocupat
 Time: 752 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: COUNTED_ADDS: 0
@@ -405,133 +243,81 @@ Note: CURRENT STATE: c3
 Time: 753 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c3
 Time: 754 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 755 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 782 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 783 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 784 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 785 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 785 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 785 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 787 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 787 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 802 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 803 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 804 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 805 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 822 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 823 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 824 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 825 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 825 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 825 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 842 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 0
-Time: 842 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 772 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=10
+Time: 773 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 774 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=11
+Time: 792 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 793 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=12
+Time: 794 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 812 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=13
+Time: 813 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 814 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=14
+Time: 832 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 833 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=13
+Time: 834 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 852 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=12
+Time: 853 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2U=0
+Time: 854 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c3
-Time: 843 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 844 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 872 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c4
-Time: 845 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 873 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c4
-Time: 862 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 863 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c5
-Time: 864 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 865 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 865 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 865 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 867 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 867 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 882 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 883 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
-Time: 884 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 885 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
-Time: 902 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 903 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
-Time: 904 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 905 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 905 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 905 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: ocupat
-Time: 922 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 0
-Time: 922 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 923 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c3
-Time: 924 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c4
-Time: 925 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Time: 874 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: RAM_CONTROLLER: data2D=13
+Time: 892 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 893 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=12
+Time: 894 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 912 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=11
+Time: 913 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 914 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=10
+Time: 932 ns  Iteration: 2  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=0
+Time: 933 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
+Note: RAM_CONTROLLER: data2D=9
+Time: 934 ns  Iteration: 1  Process: /testbench/test/executie/ram_Controller/line__53  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/RamController.vhd
 Note: CURRENT STATE: c4
 Time: 952 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c5
 Time: 953 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
 Note: CURRENT STATE: c5
 Time: 954 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: match
-Time: 955 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: LIBER
-Time: 955 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd
-Note: CURRENT STATE: match
-Time: 955 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 957 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
-Time: 957 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: liber
+Note: CURRENT STATE: c5
 Time: 972 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
+Note: CURRENT STATE: match
 Time: 973 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c0
+Note: CURRENT STATE: match
+Time: 973 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: match
 Time: 974 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
+Note: CURRENT STATE: liber
 Time: 975 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c1
+Note: CURRENT STATE: liber
+Time: 975 ns  Iteration: 4  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
+Note: CURRENT STATE: liber
 Time: 992 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
+Note: CURRENT STATE: c0
 Time: 993 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: c2
+Note: CURRENT STATE: c0
 Time: 994 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: CURRENT STATE: ocupat
-Time: 995 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: COUNTED_ADDS: 4
-Time: 995 ns  Iteration: 2  Process: /testbench/test/control/changeState  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateControl.vhd
-Note: OCUPAT
-Time: 995 ns  Iteration: 3  Process: /testbench/test/executie/logg  File: D:/FACULTATE/facultate/anul1/sem2/PSN/proiect/ProiectPSN-Cifru/cifru_project/cifru_project.srcs/sources_1/new/UnitateExecutie.vhd

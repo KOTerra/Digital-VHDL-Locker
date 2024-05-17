@@ -9,9 +9,9 @@ entity RamController is
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
         enableAnod3 : in std_logic;
-        up : in std_logic;
-        down : in std_logic;
-        address : out std_logic_vector(1 downto 0);
+        up : in std_logic := '0';
+        down : in std_logic := '0';
+        address : out std_logic_vector(1 downto 0) := "00";
         data1 : inout std_logic_vector(3 downto 0);
         data2 : inout std_logic_vector(3 downto 0);
         writeEnableRamCifru : out std_logic;
@@ -21,7 +21,6 @@ end RamController;
 
 architecture Behavioral of RamController is
     signal aux : std_logic_vector(3 downto 0) := "0000";
-
 begin
     process (liberOcupat)
     begin
@@ -38,11 +37,16 @@ begin
     begin
         if enableAnod3 = '1' and enableAnod2 = '1' and enableAnod1 = '1' then
             address <= "10";
+        elsif enableAnod3 = '0' and enableAnod2 = '1' and enableAnod1 = '1' then
+            address <= "01";
+        elsif enableAnod3 = '0' and enableAnod2 = '0' and enableAnod1 = '1' then
+            address <= "00";
         elsif enableAnod2 = '1' and enableAnod1 = '1' then
             address <= "01";
         elsif enableAnod1 = '1' then
             address <= "00";
-
+        else
+            address <= "00";
         end if;
     end process;
 

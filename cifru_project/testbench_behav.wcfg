@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="294.201 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/testbench/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/reset_tb" type="logic">
+      <obj_property name="ElementShortName">reset_tb</obj_property>
+      <obj_property name="ObjectShortName">reset_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/addCifraDebounced" type="logic">
+      <obj_property name="ElementShortName">addCifraDebounced</obj_property>
+      <obj_property name="ObjectShortName">addCifraDebounced</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/upDebounced" type="logic">
+      <obj_property name="ElementShortName">upDebounced</obj_property>
+      <obj_property name="ObjectShortName">upDebounced</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/downDebounced" type="logic">
+      <obj_property name="ElementShortName">downDebounced</obj_property>
+      <obj_property name="ObjectShortName">downDebounced</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/liberOcupatLED_tb" type="logic">
+      <obj_property name="ElementShortName">liberOcupatLED_tb</obj_property>
+      <obj_property name="ObjectShortName">liberOcupatLED_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/enableAnod1" type="logic">
+      <obj_property name="ElementShortName">enableAnod1</obj_property>
+      <obj_property name="ObjectShortName">enableAnod1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/enableAnod2" type="logic">
+      <obj_property name="ElementShortName">enableAnod2</obj_property>
+      <obj_property name="ObjectShortName">enableAnod2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/enableAnod3" type="logic">
+      <obj_property name="ElementShortName">enableAnod3</obj_property>
+      <obj_property name="ObjectShortName">enableAnod3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Controller/address" type="array">
+      <obj_property name="ElementShortName">address[1:0]</obj_property>
+      <obj_property name="ObjectShortName">address[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/introduCaractereLED_tb" type="logic">
+      <obj_property name="ElementShortName">introduCaractereLED_tb</obj_property>
+      <obj_property name="ObjectShortName">introduCaractereLED_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/anodActiv_tb" type="array">
+      <obj_property name="ElementShortName">anodActiv_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">anodActiv_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/segmentOutLED_tb" type="array">
+      <obj_property name="ElementShortName">segmentOutLED_tb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">segmentOutLED_tb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/up_tb" type="logic">
+      <obj_property name="ElementShortName">up_tb</obj_property>
+      <obj_property name="ObjectShortName">up_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/down_tb" type="logic">
+      <obj_property name="ElementShortName">down_tb</obj_property>
+      <obj_property name="ObjectShortName">down_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/addCifra_tb" type="logic">
+      <obj_property name="ElementShortName">addCifra_tb</obj_property>
+      <obj_property name="ObjectShortName">addCifra_tb</obj_property>
+   </wvobject>
+</wave_config>

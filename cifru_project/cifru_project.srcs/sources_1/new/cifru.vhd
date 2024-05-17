@@ -4,7 +4,9 @@ entity cifru is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        up, down, addCifra : in std_logic;
+        up : in std_logic;
+        down : in std_logic;
+        addCifra : in std_logic;
         liberOcupatLED : out std_logic;
         introduCaractereLED : out std_logic;
         anodActiv : out std_logic_vector (7 downto 0);
@@ -58,9 +60,9 @@ architecture Behavioral of cifru is
             debounced : out std_logic);
     end component;
 
-    signal addCifraDebounced : std_logic:= '0';
-    signal upDebounced : std_logic;
-    signal downDebounced : std_logic;
+    signal addCifraDebounced : std_logic := '0';
+    signal upDebounced : std_logic := '0';
+    signal downDebounced : std_logic := '0';
 
     signal enableCompare : std_logic;
     signal checkedMatch : std_logic;
@@ -74,6 +76,6 @@ begin
     mpgUp : MPG port map(up, clk, upDebounced);
     mpgDown : MPG port map(down, clk, downDebounced);
 
-    control : UnitateControl port map(clk, reset, addCifraDebounced, enableCompare, checkedMatch, enableAnod1, enableAnod2, enableAnod3, match, liberOcupat, liberOcupatLED, introduCaractereLED);   --change to debounced
-    executie : UnitateExecutie port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, enableCompare, checkedMatch, match, anodActiv, segmentOutLED);
+    control : UnitateControl port map(clk, reset, addCifraDebounced, enableCompare, checkedMatch, enableAnod1, enableAnod2, enableAnod3, match, liberOcupat, liberOcupatLED, introduCaractereLED); --change to debounced
+    executie : UnitateExecutie port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, upDebounced, downDebounced, enableCompare, checkedMatch, match, anodActiv, segmentOutLED);
 end Behavioral;

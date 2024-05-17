@@ -6,12 +6,12 @@ entity UnitateControl is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        addCifra : in std_logic;
+        addCifra : in std_logic := '0';
         enableCompare : out std_logic;
         checkedMatch : in std_logic;
-        enableAnod1 : out std_logic;
-        enableAnod2 : out std_logic;
-        enableAnod3 : out std_logic;
+        enableAnod1 : out std_logic := '0';
+        enableAnod2 : out std_logic := '0';
+        enableAnod3 : out std_logic := '0';
         match : in std_logic;
         liberOcupat : inout std_logic;
         liberOcupatLED : out std_logic;
@@ -32,7 +32,7 @@ begin
             countAdds <= 0;
         end if;
 
-        if addCifra = '1' and rising_edge(clk) then
+        if rising_edge(addCifra) and rising_edge(clk) then
             countAdds <= countAdds + 1;
         end if;
 
@@ -52,11 +52,11 @@ begin
 
         liberOcupat <= '0';
         liberOcupatLED <= '0';
-       -- introduCaractereLED <= '0';
+        -- introduCaractereLED <= '0';
         enableCompare <= '0';
-        enableAnod1 <= '0';
-        enableAnod2 <= '0';
-        enableAnod3 <= '0';
+        --enableAnod1 <= '0';
+        --enableAnod2 <= '0';
+        --enableAnod3 <= '0';
         ----componenet anod
 
         case currentState is
@@ -65,10 +65,13 @@ begin
                 introduCaractereLED <= '0';
                 liberOcupat <= '0';
                 liberOcupatLED <= '0';
-                if addCifra = '1' then
-                    nextState <= ASTEPT_CIFRA0;
-                else
-                    nextState <= LIBER;
+                enableAnod1 <= '0';
+                enableAnod2 <= '0';
+                enableAnod3 <= '0';
+                
+                nextState <= LIBER;
+                if rising_edge(addCifra) then
+                    nextState <= ASTEPT_CIFRA0;        
                 end if;
 
             when ASTEPT_CIFRA0 =>
@@ -77,7 +80,9 @@ begin
                 liberOcupat <= '0';
                 liberOcupatLED <= '0';
                 enableAnod1 <= '1';
-                if addCifra = '1' then
+                enableAnod2 <= '0';
+                enableAnod3 <= '0';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
@@ -88,7 +93,8 @@ begin
                 liberOcupatLED <= '0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
-                if addCifra = '1' then
+                enableAnod3 <= '0';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA2;
                 end if;
 
@@ -100,7 +106,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
-                if addCifra = '1' then
+                if rising_edge(addCifra) then
                     nextState <= OCUPAT;
                 end if;
 
@@ -112,7 +118,10 @@ begin
 
                 liberOcupat <= '1';
                 liberOcupatLED <= '1';
-                if addCifra = '1' then
+                enableAnod1 <= '0';
+                enableAnod2 <= '0';
+                enableAnod3 <= '0';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA3;
                 end if;
 
@@ -123,7 +132,9 @@ begin
                 liberOcupatLED <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
-                if addCifra = '1' then
+                enableAnod2 <= '0';
+                enableAnod3 <= '0';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA4;
                 end if;
 
@@ -135,7 +146,8 @@ begin
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
-                if addCifra = '1' then
+                enableAnod3 <= '0';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA5;
                 end if;
 
@@ -147,7 +159,8 @@ begin
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
-                if addCifra = '1' then
+                enableAnod3 <= '1';
+                if rising_edge(addCifra) then
                     nextState <= ASTEPT_MATCH;
                 end if;
                 ---sau un wait 

@@ -5,12 +5,12 @@ entity UnitateExecutie is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        liberOcupat : in std_logic;
+        liberOcupat : in std_logic := '0';
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
         enableAnod3 : in std_logic;
-        up : in std_logic;
-        down : in std_logic;
+        up : in std_logic := '0';
+        down : in std_logic := '0';
         enableCompare : in std_logic;
         checkedMatch : out std_logic;
         match : out std_logic;
@@ -35,8 +35,8 @@ architecture Behavioral of UnitateExecutie is
             enableAnod1 : in std_logic;
             enableAnod2 : in std_logic;
             enableAnod3 : in std_logic;
-            up : in std_logic;
-            down : in std_logic;
+            up : in std_logic := '0';
+            down : in std_logic := '0';
             address : out std_logic_vector(1 downto 0);
             data1 : inout std_logic_vector(3 downto 0);
             data2 : inout std_logic_vector(3 downto 0);
@@ -98,7 +98,7 @@ architecture Behavioral of UnitateExecutie is
         );
     end component;
 
-    signal address : std_logic_vector(1 downto 0) := "00";
+    signal address : std_logic_vector(1 downto 0);
     signal dataIn : std_logic_vector(3 downto 0) := "0000";
     signal dataIn1 : std_logic_vector(3 downto 0) := "0000";
     signal dataIn2 : std_logic_vector(3 downto 0) := "0000";
@@ -111,20 +111,20 @@ architecture Behavioral of UnitateExecutie is
     signal displayValue1, displayValue2, displayValue3 : std_logic_vector(3 downto 0);
 
 begin
-    logg : process (up, liberOcupat)
-    begin
-        if up = '1' then
-           -- report "UP" severity note;
-        else
-            --report "NOT_UP" severity note;
+    -- logg : process (up, liberOcupat)
+    -- begin
+    --     if up = '1' then
+    --        -- report "UP" severity note;
+    --     else
+    --         --report "NOT_UP" severity note;
 
-        end if;
-        if liberOcupat = '1' then
-            report "OCUPAT" severity note;
-        else
-            report "LIBER" severity note;
-        end if;
-    end process;
+    --     end if;
+    --     if liberOcupat = '1' then
+    --         report "OCUPAT" severity note;
+    --     else
+    --         report "LIBER" severity note;
+    --     end if;
+    -- end process;
 
     ram_Controller : RamController port map(clk, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
 

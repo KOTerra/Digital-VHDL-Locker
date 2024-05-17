@@ -11,7 +11,7 @@ architecture Behavioral of testbench is
         port (
             clk : in std_logic;
             reset : in std_logic;
-            up, down, addCifra : in std_logic;
+            up, down, addCifra : in std_logic:='0';
             liberOcupatLED : out std_logic;
             introduCaractereLED : out std_logic;
             anodActiv : out std_logic_vector (7 downto 0);
@@ -22,7 +22,7 @@ architecture Behavioral of testbench is
 
     signal clk_tb : std_logic;
     signal reset_tb : std_logic;
-    signal up_tb, down_tb, addCifra_tb : std_logic;
+    signal up_tb, down_tb, addCifra_tb : std_logic:='0';
     signal liberOcupatLED_tb : std_logic;
     signal introduCaractereLED_tb : std_logic;
     signal anodActiv_tb : std_logic_vector (7 downto 0);
@@ -68,16 +68,56 @@ begin
 
     testprocess : process
     begin
+        -- reset_tb <= '1';
+        -- wait for 10ns;
+        -- reset_tb <= '0';
+
         wait for 5ns;
         addCifra_tb <= '1';
         wait for 10ns;
         addCifra_tb <= '0';
         wait for 10ns;
-
+        -----------------
+        up_tb <= '1';
+        wait for 10ns;
+        up_tb <= '0';
+        wait for 10ns;
+        up_tb <= '1';
+        wait for 10ns;
+        up_tb <= '0';
+        wait for 10ns;
+        up_tb <= '1';
+        wait for 10ns;
+        up_tb <= '0';
+        wait for 10ns;
+        down_tb <= '1';
+        wait for 10ns;
+        down_tb <= '0';
+        wait for 10ns;
+        up_tb <= '1';
+        wait for 10ns;
+        up_tb <= '0';
+        wait for 10ns;
+        ----------------
         addCifra_tb <= '1';
         wait for 10ns;
         addCifra_tb <= '0';
         wait for 10ns;
+
+        --------------
+        down_tb <= '1';
+        wait for 10ns;
+        down_tb <= '0';
+        wait for 10ns;
+        down_tb <= '1';
+        wait for 10ns;
+        down_tb <= '0';
+        wait for 10ns;
+        down_tb <= '1';
+        wait for 10ns;
+        down_tb <= '0';
+        wait for 10ns;
+        ------------------
 
         addCifra_tb <= '1';
         wait for 10ns;
