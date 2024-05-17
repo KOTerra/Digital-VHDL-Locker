@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="294.201 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="311.190 ns"></ZoomStartTime>
+      <ZoomEndTime time="460.791 ns"></ZoomEndTime>
+      <Cursor1Time time="308.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="178"></NameColumnWidth>
-      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/testbench/clk_tb" type="logic">
       <obj_property name="ElementShortName">clk_tb</obj_property>
       <obj_property name="ObjectShortName">clk_tb</obj_property>
@@ -43,6 +43,10 @@
       <obj_property name="ElementShortName">liberOcupatLED_tb</obj_property>
       <obj_property name="ObjectShortName">liberOcupatLED_tb</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/introduCaractereLED_tb" type="logic">
+      <obj_property name="ElementShortName">introduCaractereLED_tb</obj_property>
+      <obj_property name="ObjectShortName">introduCaractereLED_tb</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/test/enableAnod1" type="logic">
       <obj_property name="ElementShortName">enableAnod1</obj_property>
       <obj_property name="ObjectShortName">enableAnod1</obj_property>
@@ -59,9 +63,13 @@
       <obj_property name="ElementShortName">address[1:0]</obj_property>
       <obj_property name="ObjectShortName">address[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/introduCaractereLED_tb" type="logic">
-      <obj_property name="ElementShortName">introduCaractereLED_tb</obj_property>
-      <obj_property name="ObjectShortName">introduCaractereLED_tb</obj_property>
+   <wvobject fp_name="/testbench/test/executie/ram_Controller/data2" type="array">
+      <obj_property name="ElementShortName">data2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Controller/data1" type="array">
+      <obj_property name="ElementShortName">data1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/anodActiv_tb" type="array">
       <obj_property name="ElementShortName">anodActiv_tb[7:0]</obj_property>
@@ -70,6 +78,10 @@
    <wvobject fp_name="/testbench/segmentOutLED_tb" type="array">
       <obj_property name="ElementShortName">segmentOutLED_tb[6:0]</obj_property>
       <obj_property name="ObjectShortName">segmentOutLED_tb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/match" type="logic">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/up_tb" type="logic">
       <obj_property name="ElementShortName">up_tb</obj_property>
@@ -82,5 +94,25 @@
    <wvobject fp_name="/testbench/addCifra_tb" type="logic">
       <obj_property name="ElementShortName">addCifra_tb</obj_property>
       <obj_property name="ObjectShortName">addCifra_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Cifru/writeEnable" type="logic">
+      <obj_property name="ElementShortName">writeEnable</obj_property>
+      <obj_property name="ObjectShortName">writeEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Cifru/dataOut0" type="array">
+      <obj_property name="ElementShortName">dataOut0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Cifru/dataOut1" type="array">
+      <obj_property name="ElementShortName">dataOut1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Cifru/dataOut2" type="array">
+      <obj_property name="ElementShortName">dataOut2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/test/executie/ram_Cifru/memory" type="array">
+      <obj_property name="ElementShortName">memory[0:2][3:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:2][3:0]</obj_property>
    </wvobject>
 </wave_config>

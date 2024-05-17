@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri May 17 21:27:42 2024
+| Date         : Fri May 17 22:21:41 2024
 | Host         : POWERSLAVE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file cifru_methodology_drc_routed.rpt -pb cifru_methodology_drc_routed.pb -rpx cifru_methodology_drc_routed.rpx
 | Design       : cifru
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 63
+             Violations found: 59
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 4          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 12         |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 7          |
 | TIMING-18 | Warning          | Missing input or output delay  | 13         |
-| TIMING-20 | Warning          | Non-clocked latch              | 38         |
+| TIMING-20 | Warning          | Non-clocked latch              | 26         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -54,6 +54,46 @@ Related violations: <none>
 TIMING-17#4 Critical Warning
 Non-clocked sequential cell  
 The clock pin control/nextState[3]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data2_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data2_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data2_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin executie/ram_Controller/data2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 LUTAR-1#1 Warning
@@ -158,7 +198,7 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch control/enableAnod1_reg cannot be properly analyzed as its control pin control/enableAnod1_reg/G is not reached by a timing clock
+The latch control/introduCaractereLED_reg cannot be properly analyzed as its control pin control/introduCaractereLED_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
@@ -286,69 +326,9 @@ Non-clocked latch
 The latch executie/ram_Cifru/memory_reg[2][3] cannot be properly analyzed as its control pin executie/ram_Cifru/memory_reg[2][3]/G is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#27 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/aux_reg[0] cannot be properly analyzed as its control pin executie/ram_Controller/aux_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#28 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/aux_reg[1] cannot be properly analyzed as its control pin executie/ram_Controller/aux_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#29 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/aux_reg[2] cannot be properly analyzed as its control pin executie/ram_Controller/aux_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#30 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/aux_reg[3] cannot be properly analyzed as its control pin executie/ram_Controller/aux_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#31 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data1_reg[0] cannot be properly analyzed as its control pin executie/ram_Controller/data1_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#32 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data1_reg[1] cannot be properly analyzed as its control pin executie/ram_Controller/data1_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#33 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data1_reg[2] cannot be properly analyzed as its control pin executie/ram_Controller/data1_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#34 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data1_reg[3] cannot be properly analyzed as its control pin executie/ram_Controller/data1_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#35 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data2_reg[0] cannot be properly analyzed as its control pin executie/ram_Controller/data2_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#36 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data2_reg[1] cannot be properly analyzed as its control pin executie/ram_Controller/data2_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#37 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data2_reg[2] cannot be properly analyzed as its control pin executie/ram_Controller/data2_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#38 Warning
-Non-clocked latch  
-The latch executie/ram_Controller/data2_reg[3] cannot be properly analyzed as its control pin executie/ram_Controller/data2_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 38 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 26 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

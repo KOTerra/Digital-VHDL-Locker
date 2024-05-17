@@ -7,12 +7,12 @@ use IEEE.std_logic_unsigned.all;
 entity SevenSegmentDisplay is
     port (
         clk : in std_logic;
-        enableAnod1 : in std_logic;
-        enableAnod2 : in std_logic;
-        enableAnod3 : in std_logic;
-        displayValue1 : in std_logic_vector (3 downto 0);
-        displayValue2 : in std_logic_vector (3 downto 0);
-        displayValue3 : in std_logic_vector (3 downto 0);
+        enableAnod1 : in std_logic := '0';
+        enableAnod2 : in std_logic := '0';
+        enableAnod3 : in std_logic := '0';
+        displayValue1 : in std_logic_vector (3 downto 0) := "0000";
+        displayValue2 : in std_logic_vector (3 downto 0) := "0000";
+        displayValue3 : in std_logic_vector (3 downto 0) := "0000";
         anodActiv : out std_logic_vector (7 downto 0);
         segmentOutLED : out std_logic_vector (6 downto 0)
     );
@@ -28,6 +28,10 @@ begin
         --count <= "00";
         if enableAnod3 = '1' and enableAnod2 = '1' and enableAnod1 = '1' then
             countMaxValue <= "11";
+        elsif enableAnod3 = '0' and enableAnod2 = '1' and enableAnod1 = '1' then
+            countMaxValue <= "10";
+        elsif enableAnod3 = '0' and enableAnod2 = '0' and enableAnod1 = '1' then
+            countMaxValue <= "01";
         elsif enableAnod2 = '1' and enableAnod1 = '1' then
             countMaxValue <= "10";
         elsif enableAnod1 = '1' then

@@ -36,12 +36,12 @@ use IEEE.std_logic_unsigned.all;
 entity SevenSegmentDisplay is
     port (
         clk : in std_logic;
-        enableAnod0 : in std_logic;
-        enableAnod1 : in std_logic;
-        enableAnod2 : in std_logic;
-        displayValue0 : in std_logic_vector (3 downto 0);
-        displayValue1 : in std_logic_vector (3 downto 0);
-        displayValue2 : in std_logic_vector (3 downto 0);
+        enableAnod0 : in std_logic := '0';
+        enableAnod1 : in std_logic := '0';
+        enableAnod2 : in std_logic := '0';
+        displayValue0 : in std_logic_vector (3 downto 0) := "0000";
+        displayValue1 : in std_logic_vector (3 downto 0) := "0000";
+        displayValue2 : in std_logic_vector (3 downto 0) := "0000";
         anodActiv : out std_logic_vector (7 downto 0);
         segmentOutLED : out std_logic_vector (6 downto 0));
 end SevenSegmentDisplay;
@@ -56,6 +56,10 @@ begin
         --count <= "00";
         if enableAnod2 = '1' and enableAnod1 = '1' and enableAnod0 = '1' then
             countMaxValue <= "11";
+        elsif enableAnod2 = '0' and enableAnod1 = '1' and enableAnod0 = '1' then
+            countMaxValue <= "10";
+        elsif enableAnod2 = '0' and enableAnod1 = '0' and enableAnod0 = '1' then
+            countMaxValue <= "01";
         elsif enableAnod1 = '1' and enableAnod0 = '1' then
             countMaxValue <= "10";
         elsif enableAnod0 = '1' then
@@ -63,6 +67,7 @@ begin
         else
             countMaxValue <= "00";
         end if;
+
     end process;
 
     process (clk, countMaxValue)

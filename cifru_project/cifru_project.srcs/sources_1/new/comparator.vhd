@@ -9,8 +9,8 @@ entity comparator is
     enable : in std_logic;
     a1, a2, a3 : in std_logic_vector (3 downto 0);
     b1, b2, b3 : in std_logic_vector (3 downto 0);
-    checkedMatch : out std_logic;
-    match : out std_logic
+    checkedMatch : out std_logic := '0';
+    match : out std_logic := '0'
   );
 end comparator;
 

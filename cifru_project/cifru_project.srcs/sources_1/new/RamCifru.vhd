@@ -21,7 +21,7 @@ architecture Behavioral of RamCifru is
 begin
     process (address, writeEnable, data)
     begin
-        if writeEnable = '0' then --read
+        if writeEnable = '1' then --write
             memory(to_integer(unsigned(address))) <= data;
        
             
