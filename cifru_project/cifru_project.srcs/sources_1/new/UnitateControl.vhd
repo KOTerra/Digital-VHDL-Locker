@@ -23,7 +23,20 @@ architecture Behavioral of UnitateControl is
     type state is (LIBER, ASTEPT_CIFRA0, ASTEPT_CIFRA1, ASTEPT_CIFRA2, OCUPAT, ASTEPT_CIFRA3, ASTEPT_CIFRA4, ASTEPT_CIFRA5, ASTEPT_MATCH);
 
     signal currentState, nextState : state;
+    signal countAdds : integer := 0;
 begin
+
+    cntad : process (clk, addCifra, currentState)
+    begin
+        if currentState = OCUPAT then
+            countAdds <= 0;
+        end if;
+
+        if addCifra = '1' and rising_edge(clk) then
+            countAdds <= countAdds + 1;
+        end if;
+
+    end process;
 
     act : process (clk, reset)
     begin
@@ -38,7 +51,8 @@ begin
     begin
 
         liberOcupat <= '0';
-        introduCaractereLED <= '0';
+        liberOcupatLED <= '0';
+       -- introduCaractereLED <= '0';
         enableCompare <= '0';
         enableAnod1 <= '0';
         enableAnod2 <= '0';
@@ -48,6 +62,9 @@ begin
         case currentState is
             when LIBER =>
                 report "CURRENT STATE: liber" severity note;
+                introduCaractereLED <= '0';
+                liberOcupat <= '0';
+                liberOcupatLED <= '0';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA0;
                 else
@@ -58,6 +75,7 @@ begin
                 report "CURRENT STATE: c0"severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
+                liberOcupatLED <= '0';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
@@ -67,6 +85,7 @@ begin
                 report "CURRENT STATE: c1" severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
+                liberOcupatLED <= '0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 if addCifra = '1' then
@@ -77,6 +96,7 @@ begin
                 report "CURRENT STATE: c2" severity note;
                 introduCaractereLED <= '1';
                 liberOcupat <= '0';
+                liberOcupatLED <= '0';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
@@ -88,8 +108,10 @@ begin
 
             when OCUPAT =>
                 report "CURRENT STATE: ocupat" severity note;
+                report "COUNTED_ADDS: " & integer'image(countAdds) severity note;
 
                 liberOcupat <= '1';
+                liberOcupatLED <= '1';
                 if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA3;
                 end if;
@@ -98,6 +120,7 @@ begin
                 report "CURRENT STATE: c3"severity note;
 
                 liberOcupat <= '1';
+                liberOcupatLED <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 if addCifra = '1' then
@@ -108,6 +131,7 @@ begin
                 report "CURRENT STATE: c4"severity note;
 
                 liberOcupat <= '1';
+                liberOcupatLED <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
@@ -119,6 +143,7 @@ begin
                 report "CURRENT STATE: c5"severity note;
 
                 liberOcupat <= '1';
+                liberOcupatLED <= '1';
                 introduCaractereLED <= '1';
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
@@ -137,15 +162,16 @@ begin
                     if match = '1' then
                         nextState <= LIBER;
                         liberOcupat <= '0';
+                        liberOcupatLED <= '0';
                     elsif match = '0' then
                         nextState <= OCUPAT;
                         liberOcupat <= '1';
+                        liberOcupatLED <= '1';
                     end if;
                 end if;
             when others =>
                 nextState <= LIBER;
         end case;
-        liberOcupatLED <= liberOcupat;
     end process;
 
 end Behavioral;

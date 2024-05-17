@@ -46,7 +46,7 @@ begin
         end if;
     end process;
 
-    process (clk, up, down)
+    process (clk, liberOcupat, up, down)
     begin
         -- if up='1' then
         --     report "UP" severity note;
@@ -55,14 +55,14 @@ begin
         if liberOcupat = '0' and up = '1' and down = '0' then
             aux <= data1 + 1;
             data1 <= aux;
-            
-           report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
+
+            report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
         end if;
         if liberOcupat = '0' and down = '1' and up = '0' then
             aux <= data1 - 1;
             data1 <= aux;
-           
-            report "RAM_CONTROLLER: data1=" & integer'image(to_integer(unsigned(data1))) severity note;
+
+            report "RAM_CONTROLLER: data1D=" & integer'image(to_integer(unsigned(data1))) severity note;
         end if;
         if liberOcupat = '1' and up = '1' and down = '0' then
             aux <= data2 + 1;
@@ -74,7 +74,7 @@ begin
             aux <= data2 - 1;
             data2 <= aux;
 
-            report "RAM_CONTROLLER: data2=" & integer'image(to_integer(unsigned(data2))) severity note;
+            report "RAM_CONTROLLER: data2D=" & integer'image(to_integer(unsigned(data2))) severity note;
         end if;
 
     end process;

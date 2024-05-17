@@ -43,108 +43,119 @@ begin
 
     ---------
 
-    pr : process
-    begin
-        --l : loop 
-        addCifra_tb <= '0';
-        wait for 10ns;
-        addCifra_tb <= '1';
-        wait for 10ns;
+    -- pr : process
+    -- begin
+    --     --l : loop 
+    --     addCifra_tb <= '0';
+    --     wait for 10ns;
+    --     addCifra_tb <= '1';
+    --     wait for 10ns;
 
-        --  end loop;
-    end process;
+    --     --  end loop;
+    -- end process;
 
-    u : process
-    begin
-        l : loop
-            down_tb <= '0';
-            up_tb <= '0';
-            wait for 10ns;
-            up_tb <= '1';
-            wait for 10ns;
+    -- u : process
+    -- begin
+    --     l : loop
+    --         down_tb <= '0';
+    --         up_tb <= '0';
+    --         wait for 10ns;
+    --         up_tb <= '1';
+    --         wait for 10ns;
 
-        end loop;
-    end process;
+    --     end loop;
+    -- end process;
 
     testprocess : process
     begin
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
+        wait for 5ns;
+        addCifra_tb <= '1';
+        wait for 10ns;
+        addCifra_tb <= '0';
+        wait for 10ns;
 
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     ---------
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     wait for 10ns;
-        --     -- down_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- down_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- up_tb <= '0';
-        --     -- -------
-        --     wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     -- --------
-        --     -- report "reset" severity warning;
-        --     -- reset_tb <= '1';
-        --     -- wait for 10ns;
-        --     -- reset_tb <= '0';
+        addCifra_tb <= '1';
+        wait for 10ns;
+        addCifra_tb <= '0';
+        wait for 10ns;
 
-        --    -- wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait for 10ns;
-        --     addCifra_tb <= '1';
-        --     wait for 10ns;
-        --     addCifra_tb <= '0';
-        --     wait;
-        --        addCifra_tb <= '1';
-        --        wait for 10ns;
-        --        addCifra_tb <= '0';
+        addCifra_tb <= '1';
+        wait for 10ns;
+        addCifra_tb <= '0';
+        wait for 10ns;
+
+        addCifra_tb <= '1';
+        wait for 10ns;
+        addCifra_tb <= '0';
+        wait for 10ns;
+        -- -------
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- down_tb <= '1';
+        -- wait for 10ns;
+        -- down_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- wait for 10ns;
+        -- up_tb <= '1';
+        -- wait for 10ns;
+        -- up_tb <= '0';
+        -- -------
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait for 10ns;
+        -- --------
+        -- report "reset" severity warning;
+        -- reset_tb <= '1';
+        -- wait for 10ns;
+        -- reset_tb <= '0';
+
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait for 10ns;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
+        -- wait;
+        -- addCifra_tb <= '1';
+        -- wait for 10ns;
+        -- addCifra_tb <= '0';
 
     end process;
 
