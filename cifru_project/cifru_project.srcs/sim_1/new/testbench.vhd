@@ -21,7 +21,7 @@ architecture Behavioral of testbench is
     end component;
 
     signal clk_tb : std_logic;
-    signal reset_tb : std_logic;
+    signal reset_tb : std_logic:='0';
     signal up_tb, down_tb, addCifra_tb : std_logic:='0';
     signal liberOcupatLED_tb : std_logic;
     signal introduCaractereLED_tb : std_logic;
