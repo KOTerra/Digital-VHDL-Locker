@@ -22,7 +22,21 @@ architecture Behavioral of SevenSegmentDisplay is
     signal countMaxValue : std_logic_vector(1 downto 0) := "00";--nr anozi enabled
     signal count : std_logic_vector(1 downto 0) := "00"; --index anod curent
     signal displayValueAtCount : std_logic_vector(3 downto 0) := "0000"; --val curenta pe anod curent
+    signal cnt : integer := 0; --div freq
+
 begin
+
+    process (clk)
+    begin
+        if rising_edge(clk) then
+
+            cnt <= cnt + 1;
+            if cnt = 65536 then --65536
+                cnt <= 1;
+            end if;
+        end if;
+    end process;
+
     process (enableAnod1, enableAnod2, enableAnod3)
     begin
         --count <= "00";
@@ -43,7 +57,7 @@ begin
 
     process (clk, countMaxValue)
     begin
-        if rising_edge(clk) then
+        if rising_edge(clk) and cnt=65535 then
             count <= count + 1;
 
             if count = countMaxValue then

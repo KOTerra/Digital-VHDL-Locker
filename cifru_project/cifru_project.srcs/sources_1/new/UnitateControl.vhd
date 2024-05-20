@@ -25,7 +25,6 @@ architecture Behavioral of UnitateControl is
     signal currentState, nextState : state;
     signal countAdds : integer := 0;
 begin
-
     cntad : process (clk, addCifra, currentState)
     begin
         if currentState = OCUPAT then
@@ -40,9 +39,10 @@ begin
 
     act : process (clk, reset)
     begin
-        if reset = '1' then
+        if reset='1' then
             currentState <= LIBER;
-        elsif rising_edge(clk) then
+        end if;
+        if rising_edge(clk) then
             currentState <= nextState;
         end if;
     end process;
@@ -69,7 +69,6 @@ begin
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
                 
-                nextState <= LIBER;
                 if rising_edge(addCifra) then
                     nextState <= ASTEPT_CIFRA0;        
                 end if;
@@ -185,6 +184,9 @@ begin
             when others =>
                 nextState <= LIBER;
         end case;
+        if reset='1' then
+        nextState<=LIBER;
+        end if;
     end process;
 
 end Behavioral;

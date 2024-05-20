@@ -50,33 +50,51 @@ begin
         end if;
     end process;
 
-    process (liberOcupat, up, down)
+     process (up, down, liberOcupat)
     begin
-        -- if up='1' then
-        --     report "UP" severity note;
-        -- end if;
-
-        if liberOcupat = '0' and rising_edge(up) and down = '0' then
-            data1 <= data1 + 1;
-
-            report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
+        if rising_edge(up) then
+            if liberOcupat = '0' then
+                data1 <= data1 + 1;
+            else
+                data2 <= data2 + 1;
+            end if;
         end if;
-        if liberOcupat = '0' and rising_edge(down) and up = '0' then
-            data1 <= data1 - 1;
-
-            report "RAM_CONTROLLER: data1D=" & integer'image(to_integer(unsigned(data1))) severity note;
+        if rising_edge(down) then
+            if liberOcupat = '0' then
+                data1 <= data1 - 1;
+            else
+                data2 <= data2 - 1;
+            end if;
         end if;
-        if liberOcupat = '1' and rising_edge(up) and down = '0' then
-            data2 <= data2 + 1;
-
-            report "RAM_CONTROLLER: data2U=" & integer'image(to_integer(unsigned(data2))) severity note;
-        end if;
-        if liberOcupat = '1' and rising_edge(down) and up = '0' then
-            data2 <= data2 - 1;
-
-            report "RAM_CONTROLLER: data2D=" & integer'image(to_integer(unsigned(data2))) severity note;
-        end if;
-
     end process;
+
+    -- process (liberOcupat, up, down)
+    -- begin
+    --     -- if up='1' then
+    --     --     report "UP" severity note;
+    --     -- end if;
+
+    --     if liberOcupat = '0' and rising_edge(up) and down = '0' then
+    --         data1 <= data1 + 1;
+
+    --         report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
+    --     end if;
+    --     if liberOcupat = '0' and rising_edge(down) and up = '0' then
+    --         data1 <= data1 - 1;
+
+    --         report "RAM_CONTROLLER: data1D=" & integer'image(to_integer(unsigned(data1))) severity note;
+    --     end if;
+    --     if liberOcupat = '1' and rising_edge(up) and down = '0' then
+    --         data2 <= data2 + 1;
+
+    --         report "RAM_CONTROLLER: data2U=" & integer'image(to_integer(unsigned(data2))) severity note;
+    --     end if;
+    --     if liberOcupat = '1' and rising_edge(down) and up = '0' then
+    --         data2 <= data2 - 1;
+
+    --         report "RAM_CONTROLLER: data2D=" & integer'image(to_integer(unsigned(data2))) severity note;
+    --     end if;
+
+    -- end process;
 
 end Behavioral;

@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon May 20 19:01:06 2024
-# Process ID: 18980
+# Start of session at: Mon May 20 18:01:24 2024
+# Process ID: 7832
 # Current directory: D:/ProiectPSN-Cifru/cifru_project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10308 D:\ProiectPSN-Cifru\cifru_project\cifru_project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18920 D:\ProiectPSN-Cifru\cifru_project\cifru_project.xpr
 # Log file: D:/ProiectPSN-Cifru/cifru_project/vivado.log
 # Journal file: D:/ProiectPSN-Cifru/cifru_project\vivado.jou
 # Running On: anon, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 24956 MB
@@ -14,14 +14,51 @@
 start_gui
 open_project D:/ProiectPSN-Cifru/cifru_project/cifru_project.xpr
 update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
 open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+launch_simulation
+open_wave_config D:/ProiectPSN-Cifru/cifru_project/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+disconnect_hw_server localhost:3121
 connect_hw_server -allow_non_jtag
 open_hw_target
 set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
@@ -43,14 +80,6 @@ refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
@@ -62,25 +91,4 @@ refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/ProiectPSN-Cifru/cifru_project/cifru_project.runs/impl_1/cifru.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
