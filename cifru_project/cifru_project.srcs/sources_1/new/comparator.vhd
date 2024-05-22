@@ -15,27 +15,20 @@ entity comparator is
 end comparator;
 
 architecture Behavioral of comparator is
-  signal s1, s2, s3 : std_logic;
 begin
+
+  checkedMatch <= '0';
   process (enable, a1, a2, a3, b1, b2, b3)
   begin
-    s1 <= '1';
-    s2 <= '1';
-    s3 <= '1';
-    checkedMatch <= '0';
     if enable = '1' then
-      if a1 = b1 then
-        s1 <= '1';
+      if a1 = b1 and a2 = b2 and a3 = b3 then
+        match <= '1';
+      else
+        match <= '0';
       end if;
-      if a2 = b2 then
-        s2 <= '1';
-      end if;
-      if a3 = b3 then
-        s3 <= '1';
-      end if;
-
-      match <= s1 and s2 and s3;
       checkedMatch <= '1';
+    else
+      checkedMatch <= '0';
     end if;
   end process;
 
