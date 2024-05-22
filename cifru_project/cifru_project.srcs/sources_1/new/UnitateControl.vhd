@@ -31,7 +31,7 @@ begin
             countAdds <= 0;
         end if;
 
-        if rising_edge(addCifra) and rising_edge(clk) then
+        if addCifra = '1' and rising_edge(clk) then
             countAdds <= countAdds + 1;
         end if;
 
@@ -69,7 +69,7 @@ begin
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
                 
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA0;        
                 end if;
 
@@ -81,7 +81,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
@@ -93,7 +93,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '0';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA2;
                 end if;
 
@@ -105,7 +105,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= OCUPAT;
                 end if;
 
@@ -120,7 +120,7 @@ begin
                 enableAnod1 <= '0';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA3;
                 end if;
 
@@ -133,7 +133,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA4;
                 end if;
 
@@ -146,7 +146,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '0';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_CIFRA5;
                 end if;
 
@@ -159,7 +159,7 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
-                if rising_edge(addCifra) then
+                if addCifra = '1' then
                     nextState <= ASTEPT_MATCH;
                 end if;
                 ---sau un wait 

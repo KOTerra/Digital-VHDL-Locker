@@ -50,16 +50,16 @@ begin
         end if;
     end process;
 
-     process (up, down, liberOcupat)
+    process (up, down, liberOcupat)
     begin
-        if rising_edge(up) then
+        if up = '1' then
             if liberOcupat = '0' then
                 data1 <= data1 + 1;
             else
                 data2 <= data2 + 1;
             end if;
         end if;
-        if rising_edge(down) then
+        if down = '1' then
             if liberOcupat = '0' then
                 data1 <= data1 - 1;
             else
