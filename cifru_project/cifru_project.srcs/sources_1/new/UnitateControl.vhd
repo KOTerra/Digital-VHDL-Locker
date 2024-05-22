@@ -22,6 +22,7 @@ end UnitateControl;
 architecture Behavioral of UnitateControl is
     type state is (LIBER, ASTEPT_CIFRA0, ASTEPT_CIFRA1, ASTEPT_CIFRA2, OCUPAT, ASTEPT_CIFRA3, ASTEPT_CIFRA4, ASTEPT_CIFRA5, ASTEPT_MATCH);
 
+    signal allowAdd : std_logic := '1';
     signal currentState, nextState : state;
     signal countAdds : integer := 0;
 begin
@@ -31,7 +32,7 @@ begin
             countAdds <= 0;
         end if;
 
-        if addCifra = '1' and rising_edge(clk) then
+        if addCifra = '1' and allowAdd = '1'and rising_edge(clk) then
             countAdds <= countAdds + 1;
         end if;
 
@@ -39,7 +40,7 @@ begin
 
     act : process (clk, reset)
     begin
-        if reset='1' then
+        if reset = '1' then
             currentState <= LIBER;
         end if;
         if rising_edge(clk) then
@@ -59,6 +60,10 @@ begin
         --enableAnod3 <= '0';
         ----componenet anod
 
+        if addCifra = '0' then
+            allowAdd <= '1';
+        end if;
+
         case currentState is
             when LIBER =>
                 report "CURRENT STATE: liber" severity note;
@@ -68,9 +73,10 @@ begin
                 enableAnod1 <= '0';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                
-                if addCifra = '1' then
-                    nextState <= ASTEPT_CIFRA0;        
+
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
+                    nextState <= ASTEPT_CIFRA0;
                 end if;
 
             when ASTEPT_CIFRA0 =>
@@ -81,7 +87,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_CIFRA1;
                 end if;
 
@@ -93,7 +100,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '0';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_CIFRA2;
                 end if;
 
@@ -105,7 +113,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= OCUPAT;
                 end if;
 
@@ -114,13 +123,14 @@ begin
             when OCUPAT =>
                 report "CURRENT STATE: ocupat" severity note;
                 report "COUNTED_ADDS: " & integer'image(countAdds) severity note;
-
+                introduCaractereLED <= '0';
                 liberOcupat <= '1';
                 liberOcupatLED <= '1';
                 enableAnod1 <= '0';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_CIFRA3;
                 end if;
 
@@ -133,7 +143,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '0';
                 enableAnod3 <= '0';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_CIFRA4;
                 end if;
 
@@ -146,7 +157,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '0';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_CIFRA5;
                 end if;
 
@@ -159,7 +171,8 @@ begin
                 enableAnod1 <= '1';
                 enableAnod2 <= '1';
                 enableAnod3 <= '1';
-                if addCifra = '1' then
+                if addCifra = '1' and allowAdd = '1'then
+                    allowAdd <= '0';
                     nextState <= ASTEPT_MATCH;
                 end if;
                 ---sau un wait 
@@ -184,8 +197,8 @@ begin
             when others =>
                 nextState <= LIBER;
         end case;
-        if reset='1' then
-        nextState<=LIBER;
+        if reset = '1' then
+            nextState <= LIBER;
         end if;
     end process;
 
