@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.all;
 entity UnitateExecutie is
     port (
         clk : in std_logic;
-        reset : in std_logic;
+        reset : in std_logic := '0';
         liberOcupat : in std_logic := '0';
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
@@ -31,6 +31,7 @@ architecture Behavioral of UnitateExecutie is
     component RamController is
         port (
             clk : in std_logic;
+            reset : in std_logic;
             liberOcupat : in std_logic;
             enableAnod1 : in std_logic;
             enableAnod2 : in std_logic;
@@ -126,7 +127,7 @@ begin
     --     end if;
     -- end process;
 
-    ram_Controller : RamController port map(clk, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
+    ram_Controller : RamController port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
 
     ram_Cifru : RamCifru port map(address, writeEnableRamCifru, dataIn1, rcdo0, rcdo1, rcdo2);
     ram_CifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn2, rccdo0, rccdo1, rccdo2);

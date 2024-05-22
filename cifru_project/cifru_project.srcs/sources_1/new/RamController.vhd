@@ -5,6 +5,7 @@ use IEEE.std_logic_unsigned.all;
 entity RamController is
     port (
         clk : in std_logic;
+        reset : in std_logic := '0';
         liberOcupat : in std_logic;
         enableAnod1 : in std_logic;
         enableAnod2 : in std_logic;
@@ -22,6 +23,7 @@ end RamController;
 architecture Behavioral of RamController is
     signal aux : std_logic_vector(3 downto 0) := "0000";
 begin
+
     process (liberOcupat)
     begin
         if liberOcupat = '1' then
@@ -50,51 +52,27 @@ begin
         end if;
     end process;
 
-    process (up, down, liberOcupat)
+    process (up, down, liberOcupat, reset)
     begin
-        if up = '1' then
-            if liberOcupat = '0' then
-                data1 <= data1 + 1;
-            else
-                data2 <= data2 + 1;
+        if reset = '1' then
+            data1 <= "0000";
+            data2 <= "0000";
+        else
+            if up = '1' then
+                if liberOcupat = '0' then
+                    data1 <= data1 + 1;
+                else
+                    data2 <= data2 + 1;
+                end if;
             end if;
-        end if;
-        if down = '1' then
-            if liberOcupat = '0' then
-                data1 <= data1 - 1;
-            else
-                data2 <= data2 - 1;
+            if down = '1' then
+                if liberOcupat = '0' then
+                    data1 <= data1 - 1;
+                else
+                    data2 <= data2 - 1;
+                end if;
             end if;
         end if;
     end process;
-
-    -- process (liberOcupat, up, down)
-    -- begin
-    --     -- if up='1' then
-    --     --     report "UP" severity note;
-    --     -- end if;
-
-    --     if liberOcupat = '0' and rising_edge(up) and down = '0' then
-    --         data1 <= data1 + 1;
-
-    --         report "RAM_CONTROLLER: data1U=" & integer'image(to_integer(unsigned(data1))) severity note;
-    --     end if;
-    --     if liberOcupat = '0' and rising_edge(down) and up = '0' then
-    --         data1 <= data1 - 1;
-
-    --         report "RAM_CONTROLLER: data1D=" & integer'image(to_integer(unsigned(data1))) severity note;
-    --     end if;
-    --     if liberOcupat = '1' and rising_edge(up) and down = '0' then
-    --         data2 <= data2 + 1;
-
-    --         report "RAM_CONTROLLER: data2U=" & integer'image(to_integer(unsigned(data2))) severity note;
-    --     end if;
-    --     if liberOcupat = '1' and rising_edge(down) and up = '0' then
-    --         data2 <= data2 - 1;
-
-    --         report "RAM_CONTROLLER: data2D=" & integer'image(to_integer(unsigned(data2))) severity note;
-    --     end if;
-
-    -- end process;
 
 end Behavioral;
