@@ -11,14 +11,21 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="300.201 ns"></ZoomEndTime>
-      <Cursor1Time time="69.000 ns"></Cursor1Time>
+      <ZoomEndTime time="1,427.001 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="178"></NameColumnWidth>
-      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+      <NameColumnWidth column_width="213"></NameColumnWidth>
+      <ValueColumnWidth column_width="124"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="29" />
+   <wave_markers>
+      <marker time="240000" label="" />
+      <marker time="327000" label="" />
+      <marker time="582000" label="" />
+      <marker time="901000" label="" />
+      <marker time="0" label="" />
+   </wave_markers>
    <wvobject fp_name="/testbench/clk_tb" type="logic">
       <obj_property name="ElementShortName">clk_tb</obj_property>
       <obj_property name="ObjectShortName">clk_tb</obj_property>

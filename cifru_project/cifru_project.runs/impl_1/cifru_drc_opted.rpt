@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon May 20 19:54:39 2024
-| Host         : anon running 64-bit major release  (build 9200)
+| Date         : Wed May 22 19:53:15 2024
+| Host         : POWERSLAVE running 64-bit major release  (build 9200)
 | Command      : report_drc -file cifru_drc_opted.rpt -pb cifru_drc_opted.pb -rpx cifru_drc_opted.rpx
 | Design       : cifru
 | Device       : xc7a100tcsg324-1
@@ -24,13 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
-+-------------+----------+-------------------------------------------------------------+------------+
-| Rule        | Severity | Description                                                 | Violations |
-+-------------+----------+-------------------------------------------------------------+------------+
-| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 3          |
-+-------------+----------+-------------------------------------------------------------+------------+
+             Violations found: 1
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
++----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -45,35 +44,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT mpgAddCifra/nextState[3]_P_i_1 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
-control/nextState[0]_C, control/nextState[1]_P, control/nextState[2]_P
-control/nextState[3]_P
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT mpgDown/data2[3]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
-executie/ram_Controller/data1_reg[0]__0,
-executie/ram_Controller/data1_reg[1]__0,
-executie/ram_Controller/data1_reg[2]__0,
-executie/ram_Controller/data1_reg[3]__0,
-executie/ram_Controller/data2_reg[0], executie/ram_Controller/data2_reg[1],
-executie/ram_Controller/data2_reg[2], executie/ram_Controller/data2_reg[3]
-Related violations: <none>
-
-PLHOLDVIO-2#3 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT mpgUp/data1[3]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
-executie/ram_Controller/data1_reg[0], executie/ram_Controller/data1_reg[1],
-executie/ram_Controller/data1_reg[2], executie/ram_Controller/data1_reg[3],
-executie/ram_Controller/data2_reg[0]__0,
-executie/ram_Controller/data2_reg[1]__0,
-executie/ram_Controller/data2_reg[2]__0
-executie/ram_Controller/data2_reg[3]__0
 Related violations: <none>
 
 
