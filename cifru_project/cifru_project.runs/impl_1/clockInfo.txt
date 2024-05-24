@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Wed May 22 19:53:18 2024
+| Date         : Fri May 24 13:14:37 2024
 | Host         : POWERSLAVE
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--

@@ -11,7 +11,7 @@ entity UnitateExecutie is
         enableAnod3 : in std_logic;
         up : in std_logic := '0';
         down : in std_logic := '0';
-        enableCompare : in std_logic;
+        enableCompare : in std_logic := '0';
         checkedMatch : out std_logic;
         match : out std_logic;
         anodActiv : out std_logic_vector (7 downto 0);
@@ -30,7 +30,6 @@ architecture Behavioral of UnitateExecutie is
 
     component RamController is
         port (
-            clk : in std_logic;
             reset : in std_logic;
             liberOcupat : in std_logic;
             enableAnod1 : in std_logic;
@@ -68,10 +67,10 @@ architecture Behavioral of UnitateExecutie is
 
     component comparator is
         port (
-            enable : in std_logic;
+            --enable : in std_logic;
             a1, a2, a3 : in std_logic_vector (3 downto 0);
             b1, b2, b3 : in std_logic_vector (3 downto 0);
-            checkedMatch : out std_logic;
+           -- checkedMatch : out std_logic;
             match : out std_logic
         );
     end component;
@@ -127,12 +126,12 @@ begin
     --     end if;
     -- end process;
 
-    ram_Controller : RamController port map(clk, reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
+    ram_Controller : RamController port map(reset, liberOcupat, enableAnod1, enableAnod2, enableAnod3, up, down, address, dataIn1, dataIn2, writeEnableRamCifru, writeEnableRamCifreCurente);
 
     ram_Cifru : RamCifru port map(address, writeEnableRamCifru, dataIn1, rcdo0, rcdo1, rcdo2);
     ram_CifreCurente : RamCifreCurente port map(address, writeEnableRamCifreCurente, dataIn2, rccdo0, rccdo1, rccdo2);
 
-    comparator_a : comparator port map(enableCompare, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, checkedMatch, match);
+    comparator_a : comparator port map( rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2,  match);
 
     display_Controller : DisplayController port map(liberOcupat, rcdo0, rcdo1, rcdo2, rccdo0, rccdo1, rccdo2, displayValue1, displayValue2, displayValue3);
     display : SevenSegmentDisplay port map(clk, enableAnod1, enableAnod2, enableAnod3, displayValue1, displayValue2, displayValue3, anodActiv, segmentOutLED); ---display controller select values

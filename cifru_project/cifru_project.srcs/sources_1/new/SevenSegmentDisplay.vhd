@@ -13,8 +13,8 @@ entity SevenSegmentDisplay is
         displayValue1 : in std_logic_vector (3 downto 0) := "0000";
         displayValue2 : in std_logic_vector (3 downto 0) := "0000";
         displayValue3 : in std_logic_vector (3 downto 0) := "0000";
-        anodActiv : out std_logic_vector (7 downto 0);
-        segmentOutLED : out std_logic_vector (6 downto 0)
+        anodActiv : out std_logic_vector (7 downto 0) := "00000000";
+        segmentOutLED : out std_logic_vector (6 downto 0) := "0000000"
     );
 end SevenSegmentDisplay;
 
@@ -55,9 +55,9 @@ begin
         end if;
     end process;
 
-    process (clk, countMaxValue)
+    process (clk, cnt, countMaxValue)
     begin
-        if rising_edge(clk) and cnt=65535 then
+        if rising_edge(clk) and cnt = 65535 then
             count <= count + 1;
 
             if count = countMaxValue then
@@ -66,7 +66,7 @@ begin
         end if;
     end process;
 
-    process (count, displayValue1, displayValue2, displayValue3)
+    process (count, displayValueAtCount, displayValue1, displayValue2, displayValue3)
     begin
         case count is
             when "00" =>
@@ -81,7 +81,6 @@ begin
                 anodActiv <= "11111011";
                 displayValueAtCount <= displayValue3;
             when others =>
-                anodActiv <= "11111111";
         end case;
 
         case displayValueAtCount is

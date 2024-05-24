@@ -19,7 +19,7 @@ architecture Behavioral of RamCifreCurente is
         "0000", "0000", "0000"
     );
 begin
-    process (address, writeEnable, data)
+    process (address, memory, writeEnable, data)
     begin
         if writeEnable = '1' then --write
             memory(to_integer(unsigned(address))) <= data;

@@ -7,7 +7,7 @@ entity UnitateControl is
         clk : in std_logic;
         reset : in std_logic;
         addCifra : in std_logic := '0';
-        enableCompare : out std_logic;
+        enableCompare : out std_logic := '0';
         checkedMatch : in std_logic;
         enableAnod1 : out std_logic := '0';
         enableAnod2 : out std_logic := '0';
@@ -24,21 +24,9 @@ architecture Behavioral of UnitateControl is
 
     signal allowAdd : std_logic := '1';
     signal currentState, nextState : state;
-    signal countAdds : integer := 0;
 begin
-    cntad : process (clk, addCifra, currentState)
-    begin
-        if currentState = OCUPAT then
-            countAdds <= 0;
-        end if;
 
-        if addCifra = '1' and allowAdd = '1'and rising_edge(clk) then
-            countAdds <= countAdds + 1;
-        end if;
-
-    end process;
-
-    act : process (clk, reset)
+    act : process (clk, reset, nextState)
     begin
         if reset = '1' then
             currentState <= LIBER;
@@ -48,13 +36,13 @@ begin
         end if;
     end process;
 
-    changeState : process (addCifra, currentState, match, checkedMatch)
+    changeState : process (reset, allowAdd, addCifra, currentState, match, checkedMatch)
     begin
 
         liberOcupat <= '0';
         liberOcupatLED <= '0';
         -- introduCaractereLED <= '0';
-        enableCompare <= '0';
+       -- enableCompare <= '0';
         --enableAnod1 <= '0';
         --enableAnod2 <= '0';
         --enableAnod3 <= '0';
@@ -122,7 +110,6 @@ begin
 
             when OCUPAT =>
                 report "CURRENT STATE: ocupat" severity note;
-                report "COUNTED_ADDS: " & integer'image(countAdds) severity note;
                 introduCaractereLED <= '0';
                 liberOcupat <= '1';
                 liberOcupatLED <= '1';
@@ -180,10 +167,10 @@ begin
             when ASTEPT_MATCH =>
                 report "CURRENT STATE: match" severity note;
 
-                enableCompare <= '1';
-                if checkedMatch = '0' then
-                    nextState <= ASTEPT_MATCH;
-                else
+                -- enableCompare <= '1';
+                -- if checkedMatch = '0' then
+                --     nextState <= ASTEPT_MATCH;
+                -- else
                     if match = '1' then
                         nextState <= LIBER;
                         liberOcupat <= '0';
@@ -193,7 +180,7 @@ begin
                         liberOcupat <= '1';
                         liberOcupatLED <= '1';
                     end if;
-                end if;
+               -- end if;
             when others =>
                 nextState <= LIBER;
         end case;

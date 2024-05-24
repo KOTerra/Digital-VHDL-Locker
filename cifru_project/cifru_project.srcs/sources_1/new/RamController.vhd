@@ -4,7 +4,6 @@ use IEEE.NUMERIC_STD.all;
 use IEEE.std_logic_unsigned.all;
 entity RamController is
     port (
-        clk : in std_logic;
         reset : in std_logic := '0';
         liberOcupat : in std_logic;
         enableAnod1 : in std_logic;
