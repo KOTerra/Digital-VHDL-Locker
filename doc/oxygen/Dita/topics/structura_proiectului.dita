@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="structura_proiectului">
+    <title>Structura Proiectului</title>
+    <body>
+        <p>O</p>
+        <p>
+            <ul id="ul_n3v_lqq_g5b">
+                <li>proiectul </li>
+            </ul>
+        </p>
+        <p>
+            <ul id="ul_lc4_lqq_g5b">
+                <li>c</li>
+            </ul>
+        </p>
+        <p>
+            <ul id="ul_mxh_mqq_g5b">
+                <li>launch</li>
+            </ul>
+        </p>
+        <p> </p>
+    </body>
+</topic>
