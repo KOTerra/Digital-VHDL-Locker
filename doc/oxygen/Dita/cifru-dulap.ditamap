@@ -3,7 +3,5 @@
 <map>
  <title>Strafer Liberator - Documentatie tehnica</title>
  <topicref href="topics/introducere.dita"/>
- <topicref href="topics/greenfoot_backwards_compatibility.dita"/>
  <topicref href="topics/structura_proiectului.dita"/>
- <topicref href="topics/arhitectura%20explicata.dita"/>
 </map>
