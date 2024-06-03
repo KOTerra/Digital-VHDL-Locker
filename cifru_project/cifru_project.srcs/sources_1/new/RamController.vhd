@@ -51,9 +51,12 @@ begin
         end if;
     end process;
 
-    process (up, down, liberOcupat, reset)
+    process (up, down, liberOcupat, reset, enableAnod1, enableAnod2, enableAnod3)
     begin
         if reset = '1' then
+            data1 <= "0000";
+            data2 <= "0000";
+        elsif rising_edge(enableAnod1) or rising_edge(enableAnod2) or rising_edge(enableAnod3) then
             data1 <= "0000";
             data2 <= "0000";
         else

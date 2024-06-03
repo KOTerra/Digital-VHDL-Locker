@@ -31,7 +31,7 @@ begin
         if rising_edge(clk) then
 
             cnt <= cnt + 1;
-            if cnt = 65536 then --65536
+            if cnt = 3 then --65536
                 cnt <= 1;
             end if;
         end if;
@@ -57,7 +57,7 @@ begin
 
     process (clk, cnt, countMaxValue)
     begin
-        if rising_edge(clk) and cnt = 65535 then
+        if rising_edge(clk) and cnt = 2 then    --65535
             count <= count + 1;
 
             if count = countMaxValue then

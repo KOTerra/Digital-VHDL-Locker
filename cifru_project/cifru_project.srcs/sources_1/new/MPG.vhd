@@ -24,7 +24,7 @@ begin
     if rising_edge(clk) then
 
       cnt <= cnt + 1;
-      if cnt = 65536 then --65536 placa --3 sim
+      if cnt = 3 then --65536 placa --3 sim
         cnt <= 1;
       end if;
     end if;
@@ -33,7 +33,7 @@ begin
   process (btn, clk)
   begin
     if rising_edge(clk) then
-      if cnt = 65535 then --65535 placa --2 sim
+      if cnt = 2 then --65535 placa --2 sim
         Q1 <= btn;
       end if;
     end if;
