@@ -9,4 +9,6 @@ This project was an assignment for the Digital Systems Design(Proiectarea sistem
 - If the locker is in the "Free" state, as soon as the PIN is set it will be set to "Locked", requiring the same PIN to unlock.
 - The J15 switch can be flipped at any time to reset the locker, erasing the PIN and making it "Free".
 
+![doc/g.gif](doc/g.gif)
+
 ![doc/sim_waveform.png](doc/sim_waveform.png)
